@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "ab911fa2a56d80e48030",
+  "position": {
+    "x": 627.88461538461536,
+    "y": 116.34615384615384,
+    "z": 6,
+    "height": 381.73076923076923,
+    "width": 467.30769230769226,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Distance"
+                }
+              },
+              "queryRef": "March 26 results.Distance",
+              "nativeQueryRef": "Distance",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Stroke"
+                }
+              },
+              "queryRef": "March 26 results.Stroke",
+              "nativeQueryRef": "Stroke",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "March 26 results"
+                        }
+                      },
+                      "Property": "Point"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(March 26 results.Point)",
+              "nativeQueryRef": "Sum of Point"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Distance"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Stroke"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

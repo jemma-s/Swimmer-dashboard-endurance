@@ -1,0 +1,20 @@
+model Model
+	culture: en-AU
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-AU
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["March 26 results"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'March 26 results'
+ref table DateTableTemplate_c57b5160-5572-491f-9551-1483cde6d7d8
+ref table LocalDateTable_01a7efcc-300a-41bc-8617-6de431762896
+
+ref cultureInfo en-AU
+

@@ -1,0 +1,2132 @@
+cultureInfo en-AU
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "march_26_result": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "march 26 result": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "26 result": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "march 26 consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "march 26 outcome": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "march 26 upshot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "march 26 product": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "26 consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "26 outcome": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "26 upshot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "26 product": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "march 26 effect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "march 26 end": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.msa_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "MSA ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "msa id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "msa identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "msa identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "msa identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "msa credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.club": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Club"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "club": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "association": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "nightclub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "alliance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "guild": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "team": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "union": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.sex": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Sex"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sex": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "masculinity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "femininity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.age_grp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "AgeGrp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "age grp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AgeGrp": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.course": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Course"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "course": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "lesson": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Distance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "distance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "coldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aloofness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "detachment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remoteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reserve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "vastness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "void": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gap": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.stroke": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Stroke"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stroke": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "blow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "knock": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rap": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "lash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "thump": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "whack": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "caress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "fondle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.result": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Result"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "result": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "outcome": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "upshot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "product": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "effect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "end": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.split": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Split"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "split": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "separation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "splitting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "ripping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tearing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "cracking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "rupture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.point": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Point"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "point": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "idea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "argument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "topic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "theme": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "outlet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "socket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "plug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "contact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Location"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Select a swimmer": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.latest_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Latest_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latest date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Latest_date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "latest moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "latest period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    }
+			  },
+			  "Relationships": {
+			    "march_26_result_date_date_hierarchy_has_march_26_result_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "march_26_result.date.date_hierarchy"
+			          }
+			        },
+			        "march_26_result.date.month": {
+			          "Target": {
+			            "Entity": "march_26_result.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "march_26_result_date_date_hierarchy_has_march_26_result_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "march_26_result.date.date_hierarchy"
+			          }
+			        },
+			        "march_26_result.date.quarter": {
+			          "Target": {
+			            "Entity": "march_26_result.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "march_26_result_date_date_hierarchy_has_march_26_result_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "march_26_result.date.date_hierarchy"
+			          }
+			        },
+			        "march_26_result.date.year": {
+			          "Target": {
+			            "Entity": "march_26_result.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "march_26_result_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result.date": {
+			          "Target": {
+			            "Entity": "march_26_result.date"
+			          }
+			        },
+			        "march_26_result.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "march_26_result.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result.date"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_latest_date": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.latest_date": {
+			          "Target": {
+			            "Entity": "march_26_result.latest_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.latest_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_latest_date"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.name": {
+			          "Target": {
+			            "Entity": "march_26_result.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Verbs": [
+			              {
+			                "Select": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "a": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "march_26_result.name"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "march_26_results_Select_a_names"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_location": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.location": {
+			          "Target": {
+			            "Entity": "march_26_result.location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_locations"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.date": {
+			          "Target": {
+			            "Entity": "march_26_result.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_dates"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_point": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.point": {
+			          "Target": {
+			            "Entity": "march_26_result.point"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.point"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_points"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_split": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.split": {
+			          "Target": {
+			            "Entity": "march_26_result.split"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.split"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_splits"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_result": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.result": {
+			          "Target": {
+			            "Entity": "march_26_result.result"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.result"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_results"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_stroke": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.stroke": {
+			          "Target": {
+			            "Entity": "march_26_result.stroke"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.stroke"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_strokes"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_distance": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.distance": {
+			          "Target": {
+			            "Entity": "march_26_result.distance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.distance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_distances"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_course": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.course": {
+			          "Target": {
+			            "Entity": "march_26_result.course"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.course"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_courses"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_age_grp": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.age_grp": {
+			          "Target": {
+			            "Entity": "march_26_result.age_grp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.age_grp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_age_grps"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_sex": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.sex": {
+			          "Target": {
+			            "Entity": "march_26_result.sex"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.sex"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_sexes"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_club": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.club": {
+			          "Target": {
+			            "Entity": "march_26_result.club"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.club"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_clubs"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_msa_id": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.msa_id": {
+			          "Target": {
+			            "Entity": "march_26_result.msa_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.msa_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_msa_ids"
+			        }
+			      ]
+			    },
+			    "march_26_result_in_location": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.location": {
+			          "Target": {
+			            "Entity": "march_26_result.location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "march_26_result.location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "march_26_result.location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_are_in_locations"
+			        }
+			      ]
+			    },
+			    "march_26_result_date_date_hierarchy_has_march_26_result_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "march_26_result.date.date_hierarchy"
+			          }
+			        },
+			        "march_26_result.date.day": {
+			          "Target": {
+			            "Entity": "march_26_result.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

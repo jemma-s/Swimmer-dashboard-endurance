@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Swimmer_dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "157acb87-f11a-42da-82f8-9d0c083d8698"
+  }
+}

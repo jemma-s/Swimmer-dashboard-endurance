@@ -1,0 +1,5 @@
+relationship 86155def-6d65-4a50-8c2a-65b92f325ef4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'March 26 results'.Date
+	toColumn: LocalDateTable_01a7efcc-300a-41bc-8617-6de431762896.Date
+

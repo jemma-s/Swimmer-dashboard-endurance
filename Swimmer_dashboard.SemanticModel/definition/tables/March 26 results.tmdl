@@ -1,0 +1,145 @@
+table 'March 26 results'
+	lineageTag: 7a48ef2b-657a-4e83-8e89-da4bcaa74c18
+
+	measure Latest_date = CALCULATE(MAX('March 26 results'[Date]))
+		formatString: Long Date
+		lineageTag: d72a1773-125f-4d29-a34b-401e2e254859
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MaxPerCategory"
+				}
+
+		changedProperty = FormatString
+
+	column 'MSA ID'
+		dataType: int64
+		lineageTag: e2c6a8c7-4e6d-4654-ace5-edea00f2c0ce
+		summarizeBy: count
+		sourceColumn: MSA ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Club
+		dataType: string
+		lineageTag: 0401e44e-3c72-4a58-bfb6-48431b538e43
+		summarizeBy: none
+		sourceColumn: Club
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sex
+		dataType: string
+		lineageTag: f512f4d2-442b-4b25-b064-acf2bb9630b0
+		summarizeBy: none
+		sourceColumn: Sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgeGrp
+		dataType: string
+		lineageTag: d3d9f2f4-a9f3-468f-a324-d8ce1ef95566
+		summarizeBy: none
+		sourceColumn: AgeGrp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Course
+		dataType: string
+		lineageTag: 6b864570-260c-4e3e-a194-52fd0d411a94
+		summarizeBy: none
+		sourceColumn: Course
+
+		annotation SummarizationSetBy = Automatic
+
+	column Distance
+		dataType: string
+		lineageTag: 46f20bd0-9302-4397-ae44-0da95bcee4e2
+		summarizeBy: none
+		sourceColumn: Distance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stroke
+		dataType: string
+		lineageTag: 149959a3-6afc-44eb-b1ef-4c698a9993f5
+		summarizeBy: none
+		sourceColumn: Stroke
+
+		annotation SummarizationSetBy = Automatic
+
+	column Result
+		dataType: string
+		lineageTag: 7450efab-e8de-4489-a75a-5a9e9988c3ae
+		summarizeBy: none
+		sourceColumn: Result
+
+		annotation SummarizationSetBy = Automatic
+
+	column Split
+		dataType: string
+		lineageTag: 7366417f-622b-45ac-9531-2e05ac6528e3
+		summarizeBy: none
+		sourceColumn: Split
+
+		annotation SummarizationSetBy = Automatic
+
+	column Point
+		dataType: int64
+		formatString: 0
+		lineageTag: 32948eaf-089c-4981-9b53-ca5089c222c2
+		summarizeBy: sum
+		sourceColumn: Point
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 94d3b872-077d-4789-bf79-d5cf44c97751
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 86155def-6d65-4a50-8c2a-65b92f325ef4
+			defaultHierarchy: LocalDateTable_01a7efcc-300a-41bc-8617-6de431762896.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Location
+		dataType: string
+		lineageTag: 096d5a12-f046-4a15-843b-5263edb35fbb
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: e72e2c54-4623-4612-8af4-37d53cf95a63
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'March 26 results' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Recorder-website-somerset\EM1000_app_website\E1000-results.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MSA ID", Int64.Type}, {"Club", type text}, {"Sex", type text}, {"AgeGrp", type text}, {"Course", type text}, {"Distance", type text}, {"Stroke", type text}, {"Result", type text}, {"Split", type any}, {"Point", Int64.Type}, {"Date", type date}, {"Location", type text}, {"Name", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
