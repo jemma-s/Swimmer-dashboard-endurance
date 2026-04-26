@@ -4,5 +4,22 @@
   "displayName": "Page 1",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "1ced11c7950086ce1016",
+      "target": "ab911fa2a56d80e48030",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ced11c7950086ce1016",
+      "target": "d5a61df68dc0378e7841",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ced11c7950086ce1016",
+      "target": "ac93a3aa54c02047382c",
+      "type": "NoFilter"
+    }
+  ]
 }

@@ -13,6 +13,74 @@ table 'March 26 results'
 
 		changedProperty = FormatString
 
+	measure Total_points =
+			
+			SUM('March 26 results'[Point])
+		formatString: 0
+		lineageTag: 6c9abd83-2d40-4d3c-82ec-d7634e802b1f
+
+	measure Rank_overall =
+			
+			RANKX(ALL('March 26 results'[Name]),
+			    [Total_points],
+			    ,
+			    DESC,
+			    DENSE
+			    )
+		formatString: 0
+		lineageTag: de1513a0-6f30-4d04-80c1-58a10b70824a
+
+	measure Rank_gender =
+			
+			VAR currentGender = SELECTEDVALUE('March 26 results'[Sex])
+			RETURN
+			RANKX(
+			    FILTER(
+			        ALL('March 26 results'[Name]),
+			        CALCULATE(SELECTEDVALUE('March 26 results'[Sex])) = currentGender
+			    ),
+			    CALCULATE([Total_points]),
+			    ,
+			    DESC,
+			    DENSE
+			)
+		formatString: 0
+		lineageTag: 01f6c9b6-5b2b-48fe-b563-cc0660219d73
+
+	measure Rank_suffix_overall =
+			
+			VAR r = [Rank_overall]
+			VAR lastDigit = MOD(r, 10)
+			VAR lastTwoDigits = MOD(r, 100)
+			RETURN
+			    FORMAT(r, "0") &
+			    SWITCH(
+			        TRUE(),
+			        lastTwoDigits IN {11, 12, 13}, "th",
+			        lastDigit = 1, "st",
+			        lastDigit = 2, "nd",
+			        lastDigit = 3, "rd",
+			        "th"
+			    )
+		lineageTag: efcae441-6fec-4c34-98b4-0d6fe6f70ba4
+
+	measure Rank_suffix_gender =
+			
+			VAR r = [Rank_gender]
+			VAR lastDigit = MOD(r, 10)
+			VAR lastTwoDigits = MOD(r, 100)
+			RETURN
+			    FORMAT(r, "0") &
+			    SWITCH(
+			        TRUE(),
+			        lastTwoDigits IN {11, 12, 13}, "th",
+			        lastDigit = 1, "st",
+			        lastDigit = 2, "nd",
+			        lastDigit = 3, "rd",
+			        "th"
+			    )
+		lineageTag: 863e9dab-c1a6-4d16-843f-68abb06a43d5
+
 	column 'MSA ID'
 		dataType: int64
 		lineageTag: e2c6a8c7-4e6d-4654-ace5-edea00f2c0ce

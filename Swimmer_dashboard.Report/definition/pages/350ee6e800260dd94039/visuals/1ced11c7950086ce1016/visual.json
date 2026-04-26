@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 112.5,
-    "z": 4,
+    "z": 4000,
     "height": 64.42307692307692,
     "width": 225,
-    "tabOrder": 4
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -82,7 +82,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'CAYCI MCKAY'"
+                                "Value": "'JEMMA SCHOFIELD'"
                               }
                             }
                           ]
@@ -91,6 +91,13 @@
                     }
                   }
                 ]
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
               }
             }
           }
@@ -109,7 +116,7 @@
             "strictSingleSelect": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "d5a61df68dc0378e7841",
   "position": {
-    "x": 238.46153846153845,
-    "y": 53.846153846153847,
-    "z": 2,
-    "height": 33.653846153846153,
-    "width": 193.26923076923077,
-    "tabOrder": 2
+    "x": 238.5093167701863,
+    "y": 53.66459627329192,
+    "z": 2000,
+    "height": 33.7888198757764,
+    "width": 208.69565217391303,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -162,23 +162,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f6b0eec0e38d93940577",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "March 26 results"
-              }
-            },
-            "Property": "Latest_date"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
