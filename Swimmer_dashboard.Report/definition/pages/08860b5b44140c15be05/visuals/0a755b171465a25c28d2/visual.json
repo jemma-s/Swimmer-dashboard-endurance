@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "0a755b171465a25c28d2",
+  "position": {
+    "x": 587.71929824561414,
+    "y": 119.2982456140351,
+    "z": 12000,
+    "height": 285.96491228070175,
+    "width": 326.31578947368422,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Max_points"
+                }
+              },
+              "queryRef": "March 26 results.Max_points",
+              "nativeQueryRef": "Max_points",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Stroke"
+                }
+              },
+              "queryRef": "March 26 results.Stroke",
+              "nativeQueryRef": "Stroke1"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Distance"
+                }
+              },
+              "queryRef": "March 26 results.Distance",
+              "nativeQueryRef": "Distance"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "March 26 results"
+                        }
+                      },
+                      "Property": "Stroke"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(March 26 results.Stroke)",
+              "nativeQueryRef": "Stroke"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "March 26 results"
+                      }
+                    },
+                    "Property": "Stroke"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

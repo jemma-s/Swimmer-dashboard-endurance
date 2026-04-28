@@ -2,7 +2,7 @@ table 'March 26 results'
 	lineageTag: 7a48ef2b-657a-4e83-8e89-da4bcaa74c18
 
 	measure Latest_date = CALCULATE(MAX('March 26 results'[Date]))
-		formatString: Long Date
+		formatString: d mmmm
 		lineageTag: d72a1773-125f-4d29-a34b-401e2e254859
 
 		extendedProperty MeasureTemplate =
@@ -12,6 +12,8 @@ table 'March 26 results'
 				}
 
 		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	measure Total_points =
 			
@@ -80,6 +82,84 @@ table 'March 26 results'
 			        "th"
 			    )
 		lineageTag: 863e9dab-c1a6-4d16-843f-68abb06a43d5
+
+	measure Earliest_time =
+			
+			-- First time reccorded in the year
+			CALCULATE(
+			    MIN('March 26 results'[TotalSeconds]),
+			    FILTER('March 26 results', 'March 26 results'[Date] = MIN('March 26 results'[Date])
+			))
+		formatString: 0
+		lineageTag: 4612e01e-f444-4162-bc1e-e5eb60bb29e1
+
+	measure Best_time =
+			
+			-- Best time recorded in the year
+			CALCULATE(
+			    MIN('March 26 results'[TotalSeconds]))
+		formatString: 0
+		lineageTag: 424e0c8b-7360-4562-b194-8b2c95256a89
+
+	measure Improvement = [Earliest_time] - [Best_time]
+		formatString: 0
+		lineageTag: ebaaa8d2-1919-487c-b2cf-e56d294bb73f
+
+	measure Earliest_time_mins =
+			
+			-- First time reccorded in the year, displayed as a time
+			TIME(0, -- hour
+			0, -- minutes
+			CALCULATE(
+			    MIN('March 26 results'[TotalSeconds]),
+			    FILTER('March 26 results', 'March 26 results'[Date] = MIN('March 26 results'[Date])
+			)))
+		formatString: nn:ss
+		lineageTag: a353c71b-f085-4bc3-ad95-b331ca5b01f2
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure Best_time_mins =
+			
+			-- Best time reccorded in the year, displayed in mins:secs
+			TIME(0, -- hour
+			0, -- minutes
+			MIN('March 26 results'[TotalSeconds])
+			)
+		formatString: nn:ss
+		lineageTag: 5262f26a-191f-4268-8309-ccfb8b04aae5
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure Best_time_date =
+			
+			-- Date of the best time swam
+			VAR Best_time = [Best_time]
+			RETURN
+			CALCULATE(
+			    MIN('March 26 results'[Date]),
+			    FILTER('March 26 results', 'March 26 results'[TotalSeconds] = Best_time)
+			)
+		formatString: dd mmmm
+		lineageTag: ae5243aa-5905-4c34-9742-0530d1e3cc31
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure First_date =
+			
+			-- A measure which finds the first date of the row
+			MIN('March 26 results'[Date])
+		formatString: dd mmmm
+		lineageTag: 335e3d19-e129-40fd-83e5-203469e2442e
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure Max_points_% =
+			
+			-- The percentage of points that were 'maximum'
+			CALCULATE(SUM('March 26 results'[Max_points])/COUNT('March 26 results'[Max_points]))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 16a7b5cf-31e9-457b-8314-fe443553b8cf
 
 	column 'MSA ID'
 		dataType: int64
@@ -166,7 +246,7 @@ table 'March 26 results'
 
 	column Date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: d mmmm
 		lineageTag: 94d3b872-077d-4789-bf79-d5cf44c97751
 		summarizeBy: none
 		sourceColumn: Date
@@ -179,6 +259,8 @@ table 'March 26 results'
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column Location
 		dataType: string
@@ -193,6 +275,56 @@ table 'March 26 results'
 		lineageTag: e72e2c54-4623-4612-8af4-37d53cf95a63
 		summarizeBy: none
 		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Times =
+			IF(CONTAINSSTRING('March 26 results'[Result], ":"),
+			'March 26 results'[Result],
+			BLANK())
+		dataType: string
+		lineageTag: 891b563a-c31b-46ee-809c-cb79ec77ab52
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalSeconds =
+			IF('March 26 results'[Times] == BLANK(), BLANK(),
+			VAR Raw = TRIM('March 26 results'[Times])
+			VAR ColonPos = FIND(":", Raw)
+			VAR DotPos   = FIND(".", Raw)
+			
+			VAR MinPart  = VALUE(LEFT(Raw, ColonPos - 1))                        -- e.g. 006 → 6
+			VAR SecPart  = VALUE(MID(Raw, ColonPos + 1, DotPos - ColonPos - 1)) -- e.g. 36
+			VAR CsPart   = VALUE(MID(Raw, DotPos + 1, LEN(Raw)))                 -- e.g. 44 (centiseconds)
+			
+			RETURN MinPart * 60 + SecPart + CsPart / 100)
+		lineageTag: 5c689411-17bd-44a8-a9b5-41c01b8ade66
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Max_points =
+			
+			-- A conditional comment, returning 'Yes' if the entry recieved top points and 'No' if it didn't
+			-- The number of top points is dependent on the distance
+			SWITCH(
+			    TRUE,
+			    'March 26 results'[Distance] == "400m" && 'March 26 results'[Point] = 5, 1,
+			    'March 26 results'[Distance] == "800m" && 'March 26 results'[Point] = 10, 1,
+			    'March 26 results'[Distance] == "1500m" && 'March 26 results'[Point] = 40, 1,
+			    'March 26 results'[Distance] == "30MIN" && 'March 26 results'[Point] = 40, 1,
+			    'March 26 results'[Distance] == "45MIN" && 'March 26 results'[Point] = 50, 1,
+			    'March 26 results'[Distance] == "60MIN" && 'March 26 results'[Point] = 80, 1,
+			    0
+			)
+		formatString: 0
+		lineageTag: 17045475-54e0-4634-8163-2b2d7adb10b8
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 

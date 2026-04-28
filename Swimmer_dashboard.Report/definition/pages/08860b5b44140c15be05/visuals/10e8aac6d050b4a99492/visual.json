@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "ac93a3aa54c02047382c",
+  "name": "10e8aac6d050b4a99492",
   "position": {
-    "x": 123.07692307692307,
-    "y": 56.730769230769226,
-    "z": 4000,
-    "height": 46.153846153846153,
-    "width": 125.96153846153845,
-    "tabOrder": 3000
+    "x": 440,
+    "y": 0,
+    "z": 1500,
+    "height": 96,
+    "width": 792,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,18 @@
               {
                 "textRuns": [
                   {
-                    "value": "Most recent result:"
+                    "value": "Somerset Masters Endurance Results",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "32pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
                   }
                 ]
               }

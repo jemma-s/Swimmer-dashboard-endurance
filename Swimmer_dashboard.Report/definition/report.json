@@ -9,6 +9,15 @@
         "page": "2.3.1"
       },
       "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom6776457971649887.json",
+      "reportVersionAtImport": {
+        "visual": "2.8.0",
+        "report": "3.2.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
     }
   },
   "objects": {
@@ -55,6 +64,11 @@
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
+        {
+          "name": "Custom6776457971649887.json",
+          "path": "Custom6776457971649887.json",
+          "type": "CustomTheme"
+        },
         {
           "name": "somerset_logo3501018667405491.jpg",
           "path": "somerset_logo3501018667405491.jpg",

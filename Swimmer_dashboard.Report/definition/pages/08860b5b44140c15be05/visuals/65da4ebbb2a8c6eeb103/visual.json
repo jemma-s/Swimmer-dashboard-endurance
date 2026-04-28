@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "ac70d63d2ddd562a6100",
+  "name": "65da4ebbb2a8c6eeb103",
   "position": {
     "x": 0,
-    "y": 330.93167701863354,
-    "z": 8000,
-    "height": 146.08695652173913,
-    "width": 320,
-    "tabOrder": 7000
+    "y": 262,
+    "z": 7000,
+    "height": 178,
+    "width": 368,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -49,6 +49,21 @@
         }
       },
       "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Rank_suffix_gender"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
         "isDefaultSort": true
       }
     },

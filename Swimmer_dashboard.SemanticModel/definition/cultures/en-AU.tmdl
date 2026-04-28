@@ -968,21 +968,6 @@ cultureInfo en-AU
 			          }
 			        },
 			        {
-			          "date year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
 			          "yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -990,26 +975,6 @@ cultureInfo en-AU
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ],
@@ -1033,21 +998,6 @@ cultureInfo en-AU
 			          }
 			        },
 			        {
-			          "date quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
 			          "qtr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1055,26 +1005,6 @@ cultureInfo en-AU
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "moment quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ],
@@ -1098,21 +1028,6 @@ cultureInfo en-AU
 			          }
 			        },
 			        {
-			          "date month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
 			          "mth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1120,26 +1035,6 @@ cultureInfo en-AU
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ],
@@ -1160,31 +1055,6 @@ cultureInfo en-AU
 			        {
 			          "day": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ],
@@ -1640,16 +1510,6 @@ cultureInfo en-AU
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "by gender": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1741,8 +1601,8 @@ cultureInfo en-AU
 			        },
 			        {
 			          "gender": {
-			            "State": "Generated",
-			            "Weight": 0.97
+			            "Type": "Noun",
+			            "State": "Generated"
 			          }
 			        },
 			        {
@@ -1799,6 +1659,1138 @@ cultureInfo en-AU
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "by gender": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Times"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.total_second": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "TotalSeconds"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total second": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalSeconds": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "second": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate second": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall second": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "following": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "succeeding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "total jiffy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total trice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "total moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "jiffy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "trice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.earliest_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Earliest_time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "earliest time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Earliest_time": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "earliest duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "earliest interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "earliest moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "earliest period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "earliest timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.best_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Best_time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "best time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Best_time": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "best duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "best interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "best moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "best period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "best timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.improvement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Improvement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "improvement": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "enhancement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "perfection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "expansion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "enlargement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "amendment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "correction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "advancement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "upgrading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "SB (secs)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.earliest_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Earliest_time_mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "earliest time mins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Earliest_time_mins": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "earliest duration min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "earliest interval min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "earliest moment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "duration min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "earliest period min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "earliest timetable min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "First time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.best_time_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Best_time_mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "best time mins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Best_time_mins": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best duration min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "best interval min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "best moment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "duration min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "best period min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "best timetable min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Best time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.best_time_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Best_time_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "best time date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Best_time_date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "time date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best time moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "time moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "best time period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "time period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "best duration date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "best interval date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "best moment date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "duration date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Best swim": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.first_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "First_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "first date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "First_date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "first moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "first period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "First swim": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "march_26_result.max_point": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Max_points"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max point": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Max_points": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "max opinion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max idea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max argument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max topic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max theme": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max outlet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "max socket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "max plug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "march_26_result.Max_points_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "March 26 results",
+			          "ConceptualProperty": "Max_points_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Max_points_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "max_points_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "max_points_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "max points": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1937,6 +2929,369 @@ cultureInfo en-AU
 			        }
 			      ]
 			    },
+			    "march_26_result_has_Max_points_": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.Max_points_": {
+			          "Target": {
+			            "Entity": "march_26_result.Max_points_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.Max_points_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_Max_points_"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_max_point": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.max_point": {
+			          "Target": {
+			            "Entity": "march_26_result.max_point"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.max_point"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_max_points"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_first_date": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.first_date": {
+			          "Target": {
+			            "Entity": "march_26_result.first_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.first_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_first_date"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_best_time_date": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.best_time_date": {
+			          "Target": {
+			            "Entity": "march_26_result.best_time_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.best_time_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_best_time_date"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_best_time_mins": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.best_time_mins": {
+			          "Target": {
+			            "Entity": "march_26_result.best_time_mins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.best_time_mins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_best_time_mins"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_earliest_time_mins": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.earliest_time_mins": {
+			          "Target": {
+			            "Entity": "march_26_result.earliest_time_mins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.earliest_time_mins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_earliest_time_mins"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_improvement": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.improvement": {
+			          "Target": {
+			            "Entity": "march_26_result.improvement"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.improvement"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_improvement"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_best_time": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.best_time": {
+			          "Target": {
+			            "Entity": "march_26_result.best_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.best_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_best_time"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_earliest_time": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.earliest_time": {
+			          "Target": {
+			            "Entity": "march_26_result.earliest_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.earliest_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_earliest_time"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_total_second": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.total_second": {
+			          "Target": {
+			            "Entity": "march_26_result.total_second"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.total_second"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_total_seconds"
+			        }
+			      ]
+			    },
+			    "march_26_result_has_time": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.time": {
+			          "Target": {
+			            "Entity": "march_26_result.time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Object": {
+			              "Role": "march_26_result.time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_have_times"
+			        }
+			      ]
+			    },
 			    "march_26_result_has_rank_suffix_gender": {
 			      "Binding": {
 			        "ConceptualEntity": "March 26 results"
@@ -1967,6 +3322,26 @@ cultureInfo en-AU
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "march_26_results_have_rank_suffix_gender"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "march_26_result"
+			            },
+			            "Prepositions": [
+			              {
+			                "by": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "march_26_result.rank_suffix_gender"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "march_26_results_are_by_rank_suffix_gender"
 			        }
 			      ]
 			    },
@@ -2637,6 +4012,48 @@ cultureInfo en-AU
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "march_26_results_are_in_locations"
+			        }
+			      ]
+			    },
+			    "march_26_result_is_Bested_on_best_time_mins": {
+			      "Binding": {
+			        "ConceptualEntity": "March 26 results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "march_26_result": {
+			          "Target": {
+			            "Entity": "march_26_result"
+			          }
+			        },
+			        "march_26_result.best_time_mins": {
+			          "Target": {
+			            "Entity": "march_26_result.best_time_mins"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "march_26_result.best_time_mins"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "Best": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "march_26_result"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "march_26_results_are_Bested_on_best_time_mins"
 			        }
 			      ]
 			    },

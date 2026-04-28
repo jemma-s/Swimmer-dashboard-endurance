@@ -4,7 +4,7 @@
   "position": {
     "x": 0,
     "y": 112.5,
-    "z": 4000,
+    "z": 5000,
     "height": 64.42307692307692,
     "width": 225,
     "tabOrder": 4000
@@ -82,7 +82,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'JEMMA SCHOFIELD'"
+                                "Value": "'TEAGYN HAINES'"
                               }
                             }
                           ]
@@ -98,6 +98,44 @@
                 "Literal": {
                   "Value": "true"
                 }
+              }
+            },
+            "selfFilter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "m",
+                    "Entity": "March 26 results",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Contains": {
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "Name"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'teagy'"
+                          }
+                        }
+                      }
+                    },
+                    "Annotations": {
+                      "PowerBI.MParameterBehavior": 1
+                    }
+                  }
+                ]
               }
             }
           }

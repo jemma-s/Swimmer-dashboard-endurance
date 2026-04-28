@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "3840da44d4750530cd22",
+  "name": "52b4ede0600740ca428b",
   "position": {
     "x": 0,
-    "y": 186.83229813664596,
-    "z": 7000,
-    "height": 162.98136645962731,
-    "width": 320,
-    "tabOrder": 6000
+    "y": 110,
+    "z": 6000,
+    "height": 164,
+    "width": 546,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -54,6 +54,21 @@
               "queryRef": "CountNonNull(March 26 results.Point)",
               "nativeQueryRef": "swims",
               "displayName": "swims"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Max_points_%"
+                }
+              },
+              "queryRef": "March 26 results.Max_points_%",
+              "nativeQueryRef": "max points ",
+              "displayName": "max points "
             }
           ]
         }
@@ -193,7 +208,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }
@@ -210,7 +225,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -232,6 +247,34 @@
             "id": "default"
           }
         }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "weight": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -241,7 +284,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -249,6 +292,37 @@
               "expr": {
                 "Literal": {
                   "Value": "'Quick summary:'"
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
                 }
               }
             }
