@@ -43,11 +43,21 @@
                 "Value": "false"
               }
             }
+          },
+          "visible": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
           }
         }
       }
     ]
   },
+  "publicCustomVisuals": [
+    "RadarChart1446119667547"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
