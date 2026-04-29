@@ -7,10 +7,10 @@
     "z": 15000,
     "height": 280,
     "width": 417,
-    "tabOrder": 14000
+    "tabOrder": 13000
   },
   "visual": {
-    "visualType": "scatterChart",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -29,49 +29,6 @@
               "queryRef": "March 26 results.Name",
               "nativeQueryRef": "Name",
               "active": true
-            }
-          ]
-        },
-        "Series": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "March 26 results"
-                    }
-                  },
-                  "Property": "Sex"
-                }
-              },
-              "queryRef": "March 26 results.Sex",
-              "nativeQueryRef": "Sex"
-            }
-          ]
-        },
-        "X": {
-          "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "March 26 results"
-                        }
-                      },
-                      "Property": "Point"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(March 26 results.Point)",
-              "nativeQueryRef": "Points",
-              "active": true,
-              "displayName": "Points"
             }
           ]
         },
@@ -94,6 +51,24 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Improvement_per_swimmer"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -104,9 +79,81 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 6,
-                      "Percent": 0
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "March 26 results"
+                                        }
+                                      },
+                                      "Property": "Sex"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'M'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#118DFF'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Aggregation": {
+                                  "Expression": {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "March 26 results"
+                                        }
+                                      },
+                                      "Property": "Sex"
+                                    }
+                                  },
+                                  "Function": 3
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'F'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#E044A7'"
+                            }
+                          }
+                        }
+                      ]
                     }
                   }
                 }
@@ -116,40 +163,126 @@
           "selector": {
             "data": [
               {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "March 26 results"
-                          }
-                        },
-                        "Property": "Sex"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'F'"
-                      }
-                    }
-                  }
+                "dataViewWildcard": {
+                  "matchingOption": 1
                 }
               }
             ]
           }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "concatenateLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "switchAxisPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'InsideEnd'"
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "enableDetailDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "detailItalic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "detailCustomFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "labelContentLayout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SingleLine'"
+                }
+              }
+            }
+          }
         },
         {
           "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#118DFF'"
+            "dynamicLabelDetail": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
                     }
-                  }
+                  },
+                  "Property": "Rank_suffix_overall"
                 }
               }
             }
@@ -157,28 +290,12 @@
           "selector": {
             "data": [
               {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "March 26 results"
-                          }
-                        },
-                        "Property": "Sex"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'M'"
-                      }
-                    }
-                  }
+                "dataViewWildcard": {
+                  "matchingOption": 1
                 }
               }
-            ]
+            ],
+            "highlightMatching": 1
           }
         }
       ]
@@ -191,6 +308,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Best improvement by swimmer'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -240,6 +364,33 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
