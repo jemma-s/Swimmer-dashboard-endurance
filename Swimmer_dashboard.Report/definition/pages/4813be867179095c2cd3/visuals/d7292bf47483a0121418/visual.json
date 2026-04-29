@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "6a4e11c1930d986d0890",
+  "name": "d7292bf47483a0121418",
   "position": {
     "x": 0,
     "y": 440,
-    "z": 7000,
+    "z": 6000,
     "height": 280,
     "width": 440,
-    "tabOrder": 6000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "lineChart",
@@ -39,32 +39,6 @@
               },
               "queryRef": "March 26 results.Date.Variation.Date Hierarchy.Month",
               "nativeQueryRef": "Date Month",
-              "active": true
-            },
-            {
-              "field": {
-                "HierarchyLevel": {
-                  "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "March 26 results"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
-                    }
-                  },
-                  "Level": "Day"
-                }
-              },
-              "queryRef": "March 26 results.Date.Variation.Date Hierarchy.Day",
-              "nativeQueryRef": "Date Day",
               "active": true
             }
           ]

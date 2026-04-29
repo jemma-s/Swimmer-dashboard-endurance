@@ -3,11 +3,11 @@
   "name": "cd5f685705c045a3560b",
   "position": {
     "x": 440,
-    "y": 455,
-    "z": 8000,
-    "height": 253.33333333333334,
-    "width": 546.66666666666674,
-    "tabOrder": 8000
+    "y": 440,
+    "z": 6000,
+    "height": 280,
+    "width": 518.33333333333337,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "tableEx",
@@ -215,6 +215,30 @@
                   "Value": "'Swim improvements over the year'"
                 }
               }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -233,6 +257,56 @@
               "expr": {
                 "Literal": {
                   "Value": "'SB = Season''s best (secs)'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -269,23 +343,51 @@
           "Where": [
             {
               "Condition": {
-                "Not": {
-                  "Expression": {
-                    "Comparison": {
-                      "ComparisonKind": 0,
-                      "Left": {
-                        "Measure": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "m"
+                "And": {
+                  "Left": {
+                    "Not": {
+                      "Expression": {
+                        "Comparison": {
+                          "ComparisonKind": 0,
+                          "Left": {
+                            "Measure": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "Improvement"
                             }
                           },
-                          "Property": "Improvement"
+                          "Right": {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
                         }
-                      },
-                      "Right": {
-                        "Literal": {
-                          "Value": "null"
+                      }
+                    }
+                  },
+                  "Right": {
+                    "Not": {
+                      "Expression": {
+                        "Comparison": {
+                          "ComparisonKind": 0,
+                          "Left": {
+                            "Measure": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "m"
+                                }
+                              },
+                              "Property": "Improvement"
+                            }
+                          },
+                          "Right": {
+                            "Literal": {
+                              "Value": "0L"
+                            }
+                          }
                         }
                       }
                     }
@@ -294,8 +396,7 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
+        }
       }
     ]
   }

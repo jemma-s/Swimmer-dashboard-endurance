@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "a6d37e872487c822eebb",
+  "name": "ba97b2ab50364b0087d0",
   "position": {
-    "x": 0,
-    "y": 70,
-    "z": 12000,
-    "height": 40,
-    "width": 1278.5714285714287,
-    "tabOrder": 8000
+    "x": 1145,
+    "y": 0,
+    "z": 16001,
+    "height": 90,
+    "width": 135,
+    "tabOrder": 16001
   },
   "visual": {
     "visualType": "shape",
@@ -18,7 +18,7 @@
             "tileShape": {
               "expr": {
                 "Literal": {
-                  "Value": "'line'"
+                  "Value": "'arrow'"
                 }
               }
             }
@@ -38,39 +38,7 @@
           }
         }
       ],
-      "fill": [
-        {
-          "properties": {
-            "fillColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "outline": [
+      "text": [
         {
           "properties": {
             "show": {
@@ -84,7 +52,23 @@
         },
         {
           "properties": {
-            "lineColor": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'To club view'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "fillColor": {
               "solid": {
                 "color": {
                   "expr": {
@@ -99,6 +83,48 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'4813be867179095c2cd3'"
+                }
+              }
+            }
           }
         }
       ]

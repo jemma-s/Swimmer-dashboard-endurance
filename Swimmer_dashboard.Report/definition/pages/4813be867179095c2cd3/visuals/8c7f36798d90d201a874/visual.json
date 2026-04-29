@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "52b4ede0600740ca428b",
+  "name": "8c7f36798d90d201a874",
   "position": {
     "x": 0,
-    "y": 306.66666666666669,
+    "y": 211.66666666666669,
     "z": 5000,
     "height": 121.66666666666667,
-    "width": 296.66666666666669,
-    "tabOrder": 2000
+    "width": 440,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -54,6 +54,26 @@
               "queryRef": "CountNonNull(March 26 results.Point)",
               "nativeQueryRef": "swims",
               "displayName": "swims"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "March 26 results"
+                        }
+                      },
+                      "Property": "Name"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "Min(March 26 results.Name)",
+              "nativeQueryRef": "swimmers",
+              "displayName": "swimmers"
             }
           ]
         }
@@ -307,6 +327,20 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(March 26 results.Point)"
           }
         }
       ]

@@ -3,11 +3,11 @@
   "name": "65da4ebbb2a8c6eeb103",
   "position": {
     "x": 0,
-    "y": 262,
-    "z": 6000,
-    "height": 178,
-    "width": 368,
-    "tabOrder": 6000
+    "y": 205,
+    "z": 11000,
+    "height": 121.66666666666667,
+    "width": 296.66666666666669,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -82,6 +82,13 @@
                   }
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "32D"
+                }
+              }
             }
           },
           "selector": {
@@ -99,7 +106,7 @@
                         {
                           "Condition": {
                             "Comparison": {
-                              "ComparisonKind": 2,
+                              "ComparisonKind": 0,
                               "Left": {
                                 "Measure": {
                                   "Expression": {
@@ -107,26 +114,30 @@
                                       "Entity": "March 26 results"
                                     }
                                   },
-                                  "Property": "Rank_overall"
+                                  "Property": "Rank_suffix_overall"
                                 }
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "4D"
+                                  "Value": "'3rd'"
                                 }
                               }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#FFFFFF'"
+                              "Value": "'#73361c'"
                             }
                           }
                         },
                         {
                           "Condition": {
                             "Comparison": {
-                              "ComparisonKind": 3,
+                              "ComparisonKind": 0,
                               "Left": {
                                 "Measure": {
                                   "Expression": {
@@ -134,14 +145,80 @@
                                       "Entity": "March 26 results"
                                     }
                                   },
-                                  "Property": "Rank_overall"
+                                  "Property": "Rank_suffix_overall"
                                 }
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "4D"
+                                  "Value": "'2nd'"
                                 }
                               }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#cccccc'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "March 26 results"
+                                    }
+                                  },
+                                  "Property": "Rank_suffix_overall"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'1st'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#D9B300'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "March 26 results"
+                                    }
+                                  },
+                                  "Property": "Rank_suffix_overall"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "''"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
                           "Value": {
@@ -179,7 +256,7 @@
                         {
                           "Condition": {
                             "Comparison": {
-                              "ComparisonKind": 3,
+                              "ComparisonKind": 0,
                               "Left": {
                                 "Measure": {
                                   "Expression": {
@@ -187,26 +264,30 @@
                                       "Entity": "March 26 results"
                                     }
                                   },
-                                  "Property": "Rank_gender"
+                                  "Property": "Rank_suffix_gender"
                                 }
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "4D"
+                                  "Value": "'3rd'"
                                 }
                               }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#000000'"
+                              "Value": "'#73361c'"
                             }
                           }
                         },
                         {
                           "Condition": {
                             "Comparison": {
-                              "ComparisonKind": 2,
+                              "ComparisonKind": 0,
                               "Left": {
                                 "Measure": {
                                   "Expression": {
@@ -214,19 +295,85 @@
                                       "Entity": "March 26 results"
                                     }
                                   },
-                                  "Property": "Rank_gender"
+                                  "Property": "Rank_suffix_gender"
                                 }
                               },
                               "Right": {
                                 "Literal": {
-                                  "Value": "4D"
+                                  "Value": "'2nd'"
                                 }
                               }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
                             }
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#FFFFFF'"
+                              "Value": "'#cccccc'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "March 26 results"
+                                    }
+                                  },
+                                  "Property": "Rank_suffix_gender"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'1st'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#D9B300'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "March 26 results"
+                                    }
+                                  },
+                                  "Property": "Rank_suffix_gender"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "''"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#000000'"
                             }
                           }
                         }
@@ -246,6 +393,20 @@
               }
             ],
             "metadata": "March 26 results.Rank_suffix_gender"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "32D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Rank_suffix_overall"
           }
         }
       ],
@@ -537,102 +698,22 @@
             ],
             "metadata": "March 26 results.Rank_suffix_gender"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ],
       "label": [
         {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 2,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "March 26 results"
-                                    }
-                                  },
-                                  "Property": "Rank_overall"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "4D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#FFFFFF'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 1,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "March 26 results"
-                                        }
-                                      },
-                                      "Property": "Rank_overall"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "0D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "March 26 results"
-                                        }
-                                      },
-                                      "Property": "Rank_overall"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "4D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#000000'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -645,74 +726,7 @@
           }
         },
         {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 3,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "March 26 results"
-                                    }
-                                  },
-                                  "Property": "Rank_gender"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "4D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#000000'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 2,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "March 26 results"
-                                    }
-                                  },
-                                  "Property": "Rank_gender"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "4D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#FFFFFF'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -722,6 +736,63 @@
               }
             ],
             "metadata": "March 26 results.Rank_suffix_gender"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Rank_suffix_overall"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Rank_suffix_gender"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -792,6 +863,13 @@
               "expr": {
                 "Literal": {
                   "Value": "4D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
