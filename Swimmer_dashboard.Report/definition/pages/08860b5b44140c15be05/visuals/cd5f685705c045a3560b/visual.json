@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "cd5f685705c045a3560b",
   "position": {
-    "x": 440,
-    "y": 440,
-    "z": 6000,
+    "x": 439.99999999999994,
+    "y": 439.99999999999994,
+    "z": 9000,
     "height": 280,
-    "width": 518.33333333333337,
+    "width": 471.81818181818176,
     "tabOrder": 5000
   },
   "visual": {
@@ -159,7 +159,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "43.624974628546866D"
+                  "Value": "50.962842624566946D"
                 }
               }
             }
@@ -187,13 +187,147 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "48.33333333333333D"
+                  "Value": "53.75083755266994D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "March 26 results.Earliest_time_mins"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "95.09090888073288D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Stroke"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "72.83902566830137D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.First_date"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "68.90909031565273D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Distance"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "72.0175369984664D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "March 26 results.Best_time_date"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F9F7F2'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F9F7F2'"
+                    }
+                  }
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
           }
         }
       ]
@@ -307,6 +441,32 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

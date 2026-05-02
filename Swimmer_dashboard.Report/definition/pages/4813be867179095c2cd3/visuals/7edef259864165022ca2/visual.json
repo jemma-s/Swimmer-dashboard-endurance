@@ -3,11 +3,11 @@
   "name": "7edef259864165022ca2",
   "position": {
     "x": 0,
-    "y": 96.666666666666671,
-    "z": 0,
+    "y": 109.99999999999999,
+    "z": 2000,
     "height": 70,
     "width": 310,
-    "tabOrder": 15000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -71,6 +71,13 @@
               "expr": {
                 "Literal": {
                   "Value": "23D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Verdana'"
                 }
               }
             }
@@ -139,10 +146,30 @@
                   "Value": "0L"
                 }
               }
+            },
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]
@@ -155,6 +182,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

@@ -3,10 +3,10 @@
   "name": "65da4ebbb2a8c6eeb103",
   "position": {
     "x": 0,
-    "y": 205,
-    "z": 11000,
-    "height": 121.66666666666667,
-    "width": 296.66666666666669,
+    "y": 205.45454545454544,
+    "z": 13000,
+    "height": 120.90909090909089,
+    "width": 439.99999999999994,
     "tabOrder": 3000
   },
   "visual": {
@@ -44,6 +44,26 @@
               "queryRef": "March 26 results.Rank_suffix_overall",
               "nativeQueryRef": "overall",
               "displayName": "overall"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "March 26 results"
+                        }
+                      },
+                      "Property": "Point"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "Sum(March 26 results.Point)",
+              "nativeQueryRef": "swims",
+              "displayName": "swims"
             }
           ]
         }
@@ -897,6 +917,22 @@
             "metadata": "March 26 results.Rank_suffix_gender"
           }
         }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -914,6 +950,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Title'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

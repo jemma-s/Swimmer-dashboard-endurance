@@ -7,7 +7,7 @@
     "z": 15000,
     "height": 280,
     "width": 417,
-    "tabOrder": 13000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "barChart",
@@ -113,7 +113,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#118DFF'"
+                              "Value": "'#12239E'"
                             }
                           }
                         },
@@ -149,7 +149,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#E044A7'"
+                              "Value": "'#F06384'"
                             }
                           }
                         }
@@ -383,7 +383,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

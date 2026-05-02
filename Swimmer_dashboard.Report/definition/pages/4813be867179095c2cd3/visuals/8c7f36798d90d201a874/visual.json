@@ -4,7 +4,7 @@
   "position": {
     "x": 0,
     "y": 211.66666666666669,
-    "z": 5000,
+    "z": 6000,
     "height": 121.66666666666667,
     "width": 440,
     "tabOrder": 1000
@@ -132,7 +132,7 @@
             "backgroundShow": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -398,6 +398,19 @@
         }
       ],
       "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
         {
           "properties": {
             "show": {

@@ -4,7 +4,7 @@
   "position": {
     "x": 123.33333333333334,
     "y": 0,
-    "z": 2000,
+    "z": 3000,
     "height": 96.666666666666671,
     "width": 1155,
     "tabOrder": 7000
@@ -22,7 +22,9 @@
                     "value": "Somerset Masters E1000 Results - Club View",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "32pt"
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "32pt",
+                      "color": "#ffffff"
                     }
                   }
                 ]
@@ -35,6 +37,21 @@
                 ]
               }
             ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

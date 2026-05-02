@@ -3,10 +3,10 @@
   "name": "910ace7702b17e9bcad7",
   "position": {
     "x": 0,
-    "y": 316.66666666666669,
-    "z": 8000,
-    "height": 123.33333333333334,
-    "width": 176.66666666666669,
+    "y": 304.5454545454545,
+    "z": 9000,
+    "height": 135.45454545454544,
+    "width": 439.99999999999994,
     "tabOrder": 5000
   },
   "visual": {
@@ -29,6 +29,36 @@
               "queryRef": "March 26 results.Max_points_%",
               "nativeQueryRef": "max points ",
               "displayName": "max points "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Average_points"
+                }
+              },
+              "queryRef": "March 26 results.Average_points",
+              "nativeQueryRef": "average points",
+              "displayName": "average points"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Total_time_hours"
+                }
+              },
+              "queryRef": "March 26 results.Total_time_hours",
+              "nativeQueryRef": "hours swum",
+              "displayName": "hours swum"
             }
           ]
         }
@@ -76,6 +106,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -215,6 +252,22 @@
             "id": "default"
           }
         }
+      ],
+      "label": [
+        {
+          "properties": {
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -270,6 +323,19 @@
         }
       ],
       "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
         {
           "properties": {
             "show": {

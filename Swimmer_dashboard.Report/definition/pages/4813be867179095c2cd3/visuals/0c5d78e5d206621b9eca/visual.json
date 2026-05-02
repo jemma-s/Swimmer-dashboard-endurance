@@ -4,7 +4,7 @@
   "position": {
     "x": 863.33333333333337,
     "y": 90,
-    "z": 12000,
+    "z": 13000,
     "height": 350,
     "width": 416.66666666666669,
     "tabOrder": 10000
@@ -230,7 +230,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#118DFF'"
+                              "Value": "'#12239E'"
                             }
                           }
                         },
@@ -266,7 +266,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#E044A7'"
+                              "Value": "'#F06384'"
                             }
                           }
                         }
@@ -393,6 +393,19 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

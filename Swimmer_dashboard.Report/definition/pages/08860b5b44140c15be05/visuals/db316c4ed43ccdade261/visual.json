@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
   "name": "db316c4ed43ccdade261",
   "position": {
-    "x": 911.66666666666674,
-    "y": 440,
-    "z": 8000,
+    "x": 911.81818181818176,
+    "y": 439.99999999999994,
+    "z": 11000,
     "height": 280,
-    "width": 368.33333333333337,
+    "width": 368.18181818181813,
     "tabOrder": 7000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "March 26 results"
                     }
                   },
-                  "Property": "Stroke"
+                  "Property": "Distance"
                 }
               },
-              "queryRef": "March 26 results.Stroke",
-              "nativeQueryRef": "Stroke",
+              "queryRef": "March 26 results.Distance",
+              "nativeQueryRef": "Distance",
               "active": true
             }
           ]
@@ -42,11 +42,11 @@
                       "Entity": "March 26 results"
                     }
                   },
-                  "Property": "Distance"
+                  "Property": "Stroke"
                 }
               },
-              "queryRef": "March 26 results.Distance",
-              "nativeQueryRef": "Distance"
+              "queryRef": "March 26 results.Stroke",
+              "nativeQueryRef": "Stroke"
             }
           ]
         },
@@ -69,24 +69,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "March 26 results"
-                  }
-                },
-                "Property": "Improvement"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
@@ -133,7 +115,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Improvement (s)'"
+                  "Value": "'Improvement (secs)'"
                 }
               }
             }
@@ -231,6 +213,19 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

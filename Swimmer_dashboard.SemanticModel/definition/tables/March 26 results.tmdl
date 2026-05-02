@@ -158,7 +158,7 @@ table 'March 26 results'
 			
 			-- The percentage of points that were 'maximum'
 			CALCULATE(SUM('March 26 results'[Max_points])/COUNT('March 26 results'[Max_points]))
-		formatString: 0.0%;-0.0%;0.0%
+		formatString: 0%;-0%;0%
 		lineageTag: 16a7b5cf-31e9-457b-8314-fe443553b8cf
 
 	measure Improvement_text =
@@ -185,9 +185,10 @@ table 'March 26 results'
 			
 			-- Finding the average amount of points per swimmer
 			SUM('March 26 results'[Point])/DISTINCTCOUNT('March 26 results'[Name])
+		formatString: 0
 		lineageTag: d40709a4-664e-48ef-a013-0748e41596e4
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure Improvement_per_swimmer =
 			
@@ -202,6 +203,15 @@ table 'March 26 results'
 		lineageTag: 8f75266e-ffac-4a08-95f6-47427b447627
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Total_time_hours =
+			
+			-- Finding the total amount of time one has swam
+			SUM('March 26 results'[TotalSeconds])/3600
+		formatString: 0
+		lineageTag: 26503f59-37f8-4ea7-87f9-f2d19779794b
+
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column 'MSA ID'
 		dataType: int64
@@ -323,10 +333,13 @@ table 'March 26 results'
 
 		annotation SummarizationSetBy = Automatic
 
-	column Times =
+	column Times = ```
+			
+			-- Getting the times from the 'Distance' column and that from the 'Results' column in one column. 
 			IF(CONTAINSSTRING('March 26 results'[Result], ":"),
 			'March 26 results'[Result],
-			BLANK())
+			"0" & LEFT('March 26 results'[Distance], 2) & ":00.00")
+			```
 		dataType: string
 		lineageTag: 891b563a-c31b-46ee-809c-cb79ec77ab52
 		summarizeBy: none
@@ -385,7 +398,7 @@ table 'March 26 results'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Recorder-website-somerset\EM1000_app_website\E1000-results.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results.xlsx"), null, true),
 				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MSA ID", Int64.Type}, {"Club", type text}, {"Sex", type text}, {"AgeGrp", type text}, {"Course", type text}, {"Distance", type text}, {"Stroke", type text}, {"Result", type text}, {"Split", type any}, {"Point", Int64.Type}, {"Date", type date}, {"Location", type text}, {"Name", type text}}),

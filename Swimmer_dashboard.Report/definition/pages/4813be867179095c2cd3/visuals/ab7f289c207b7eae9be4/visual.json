@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "4b7fb8f25902399ea0a0",
+  "name": "ab7f289c207b7eae9be4",
   "position": {
     "x": 0,
-    "y": 70,
-    "z": 10000,
-    "height": 40,
-    "width": 1278.3333333333335,
-    "tabOrder": 3000
+    "y": 179.99999999999997,
+    "z": 18000,
+    "height": 29.999999999999996,
+    "width": 439.99999999999994,
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "shape",
@@ -18,7 +18,7 @@
             "tileShape": {
               "expr": {
                 "Literal": {
-                  "Value": "'line'"
+                  "Value": "'rectangle'"
                 }
               }
             }
@@ -46,7 +46,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
+                      "ColorId": 3,
                       "Percent": 0
                     }
                   }
@@ -57,7 +57,9 @@
           "selector": {
             "id": "default"
           }
-        },
+        }
+      ],
+      "outline": [
         {
           "properties": {
             "show": {
@@ -70,7 +72,7 @@
           }
         }
       ],
-      "outline": [
+      "text": [
         {
           "properties": {
             "show": {
@@ -84,21 +86,59 @@
         },
         {
           "properties": {
-            "lineColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Overview'"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Verdana'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "leftMargin": {
+              "expr": {
+                "Literal": {
+                  "Value": "5L"
                 }
               }
             }
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
           }
         }
       ]

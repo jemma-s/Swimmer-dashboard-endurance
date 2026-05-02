@@ -1,0 +1,87 @@
+{
+  "name": "Custom",
+  "dataColors": [
+    "#75D8F3",
+    "#12239E",
+    "#FF9F40",
+    "#F06384",
+    "#00AAA0",
+    "#744EC2",
+    "#6B007B",
+    "#D64550"
+  ],
+  "neutral": "#E66C37",
+  "visualStyles": {
+    "page": {
+      "*": {
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F9F7F2"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F9F7F2"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "outspacePane": [
+          {
+            "backgroundColor": {
+              "solid": {
+                "color": "#F9F7F2"
+              }
+            }
+          }
+        ],
+        "filterCard": [
+          {
+            "$id": "Applied",
+            "backgroundColor": {
+              "solid": {
+                "color": "#F9F7F2"
+              }
+            },
+            "transparency": 0
+          },
+          {
+            "$id": "Available",
+            "backgroundColor": {
+              "solid": {
+                "color": "#F9F7F2"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  },
+  "textClasses": {
+    "label": {
+      "fontFace": "Verdana"
+    },
+    "callout": {
+      "fontFace": "Verdana"
+    },
+    "title": {
+      "fontFace": "Verdana"
+    },
+    "header": {
+      "fontFace": "Verdana"
+    }
+  }
+}

@@ -3,10 +3,10 @@
   "name": "52b4ede0600740ca428b",
   "position": {
     "x": 0,
-    "y": 306.66666666666669,
-    "z": 5000,
-    "height": 121.66666666666667,
-    "width": 296.66666666666669,
+    "y": 306.36363636363632,
+    "z": 8000,
+    "height": 121.81818181818181,
+    "width": 439.99999999999994,
     "tabOrder": 2000
   },
   "visual": {
@@ -37,23 +37,33 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "March 26 results"
-                        }
-                      },
-                      "Property": "Point"
+                    "SourceRef": {
+                      "Entity": "March 26 results"
                     }
                   },
-                  "Function": 5
+                  "Property": "Max_points_%"
                 }
               },
-              "queryRef": "CountNonNull(March 26 results.Point)",
-              "nativeQueryRef": "swims",
-              "displayName": "swims"
+              "queryRef": "March 26 results.Max_points_%",
+              "nativeQueryRef": "max points",
+              "displayName": "max points"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Total_time_hours"
+                }
+              },
+              "queryRef": "March 26 results.Total_time_hours",
+              "nativeQueryRef": "hours swum",
+              "displayName": "hours swum"
             }
           ]
         }
@@ -112,7 +122,7 @@
             "backgroundShow": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -172,25 +182,6 @@
           },
           "selector": {
             "metadata": "Sum(March 26 results.Point)"
-          }
-        },
-        {
-          "properties": {
-            "fillColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "CountNonNull(March 26 results.Point)"
           }
         },
         {
@@ -364,6 +355,19 @@
         }
       ],
       "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
         {
           "properties": {
             "show": {

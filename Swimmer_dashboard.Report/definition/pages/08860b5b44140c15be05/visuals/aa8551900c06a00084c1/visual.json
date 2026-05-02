@@ -3,9 +3,9 @@
   "name": "aa8551900c06a00084c1",
   "position": {
     "x": 440,
-    "y": 90,
-    "z": 2000,
-    "height": 350,
+    "y": 116,
+    "z": 5000,
+    "height": 324,
     "width": 424,
     "tabOrder": 4000
   },
@@ -91,7 +91,7 @@
             "source": {
               "expr": {
                 "Literal": {
-                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \n\n# dataset <- data.frame(Sex)\n# dataset <- unique(dataset)\n\n# Paste or type your script code here:\n\n# Define max points per stroke\nstroke_maxes <- c(\n  \"Freestyle\"= 285,\n  \"Breaststroke\"= 285,\n  \"Backstroke\"= 285,\n  \"Butterfly\" = 75,\n  \"Individual Medley\"= 75\n)\n\n# Aggregate data\ndf <- aggregate(dataset$Point, by = list(Category = dataset$Stroke), FUN = sum)\n\n# Only keep strokes that are present in the data\npresent_strokes <- df$Category\nvalues          <- df$x\nmaxes           <- stroke_maxes[present_strokes]\n\n# Normalize values between 0 and 1 using each stroke''s own max\nnum_vars <- length(present_strokes)\nangles   <- seq(0, 2 * pi, length.out = num_vars + 1)\nnorm     <- values / maxes\n\n# Close the polygon\nnorm_closed   <- c(norm, norm[1])\nangles_closed <- angles\n\n# Convert to x/y coordinates\nx_coords <- cos(angles_closed) * norm_closed\ny_coords <- sin(angles_closed) * norm_closed\n\n# Draw — reduced margins to cut white space\npar(mar = c(0, 0, 0, 0))\nplot(0, 0, type = \"n\", xlim = c(-1.3, 1.3), ylim = c(-1.3, 1.3),\n     axes = FALSE, xlab = \"\", ylab = \"\")\n\n# Draw grid circles\nfor (r in c(0.25, 0.5, 0.75, 1.0)) {\n  circle_x <- cos(seq(0, 2 * pi, length.out = 100)) * r\n  circle_y <- sin(seq(0, 2 * pi, length.out = 100)) * r\n  lines(circle_x, circle_y, col = \"grey80\", lty = 2)\n}\n\n# Draw axis lines and labels\nfor (i in 1:num_vars) {\n  lines(c(0, cos(angles[i])), c(0, sin(angles[i])), col = \"grey60\")\n  text(cos(angles[i]) * 1.2, sin(angles[i]) * 1.2,\n       labels = present_strokes[i], cex = 0.8)\n}\n\n# Draw axis lines and labels\nfor (i in 1:num_vars) {\n  lines(c(0, cos(angles[i])), c(0, sin(angles[i])), col = \"grey60\")\n  text(cos(angles[i]) * 1.2, sin(angles[i]) * 1.2,\n       labels = present_strokes[i], cex = 0.8)\n}\n\n# Add point values on the polygon vertices\nfor (i in 1:num_vars) {\n  text(x_coords[i] + cos(angles[i]) * 0.12,\n       y_coords[i] + sin(angles[i]) * 0.12,\n       labels = values[i],\n       cex = 0.75, col = \"black\", font = 2)\n}\n\n# Draw the radar polygon\npolygon(x_coords, y_coords, col = rgb(0.2, 0.5, 0.9, 0.3),\n        border = \"#2330f1\") #Dark Somerset blue colour\n'"
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \n\n# dataset <- data.frame(Sex)\n# dataset <- unique(dataset)\n\n# Paste or type your script code here:\n\n# Define max points per stroke\nstroke_maxes <- c(\n  \"Freestyle\"= 285,\n  \"Breaststroke\"= 285,\n  \"Backstroke\"= 285,\n  \"Butterfly\" = 75,\n  \"Individual Medley\"= 75\n)\n\n# Aggregate data\ndf <- aggregate(dataset$Point, by = list(Category = dataset$Stroke), FUN = sum)\n\n# Only keep strokes that are present in the data\npresent_strokes <- df$Category\nvalues          <- df$x\nmaxes           <- stroke_maxes[present_strokes]\n\n# Normalize values between 0 and 1 using each stroke''s own max\nnum_vars <- length(present_strokes)\nangles   <- seq(0, 2 * pi, length.out = num_vars + 1)\nnorm     <- values / maxes\n\n# Close the polygon\nnorm_closed   <- c(norm, norm[1])\nangles_closed <- angles\n\n# Convert to x/y coordinates\nx_coords <- cos(angles_closed) * norm_closed\ny_coords <- sin(angles_closed) * norm_closed\n\n# Draw — reduced margins to cut white space\npar(mar = c(0, 0, 0, 0), \nbg = ''#f9f7f2'') # background colour\nplot(0, 0, type = \"n\", xlim = c(-1.3, 1.3), ylim = c(-1.3, 1.3),\n     axes = FALSE, xlab = \"\", ylab = \"\")\n\n# Draw grid circles\nfor (r in c(0.25, 0.5, 0.75, 1.0)) {\n  circle_x <- cos(seq(0, 2 * pi, length.out = 100)) * r\n  circle_y <- sin(seq(0, 2 * pi, length.out = 100)) * r\n  lines(circle_x, circle_y, col = \"grey80\", lty = 2)\n}\n\n# Draw axis lines and labels\nfor (i in 1:num_vars) {\n  lines(c(0, cos(angles[i])), c(0, sin(angles[i])), col = \"grey60\")\n  text(cos(angles[i]) * 1.2, sin(angles[i]) * 1.2,\n       labels = present_strokes[i], cex = 0.8,\n       family = \"verdana\")\n}\n\n# Draw axis lines and labels\nfor (i in 1:num_vars) {\n  lines(c(0, cos(angles[i])), c(0, sin(angles[i])), col = \"grey60\")\n  text(cos(angles[i]) * 1.2, sin(angles[i]) * 1.2,\n       labels = present_strokes[i], cex = 0.8,\n       family = \"verdana\")\n}\n\n# Add point values on the polygon vertices\nfor (i in 1:num_vars) {\n  text(x_coords[i] + cos(angles[i]) * 0.12,\n       y_coords[i] + sin(angles[i]) * 0.12,\n       labels = values[i],\n       cex = 0.75, col = \"black\", font = 2,\n       family = \"verdana\")\n}\n\npar(bg = ''#f9f7f2'') # setting background colour\n# Draw the radar polygon\npolygon(x_coords, y_coords, col = rgb(0.2, 0.5, 0.9, 0.3),\n        border = \"#2330f1\") #Dark Somerset blue colour\n'"
                 }
               }
             },
@@ -113,7 +113,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
