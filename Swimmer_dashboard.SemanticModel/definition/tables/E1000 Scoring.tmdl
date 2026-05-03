@@ -1,0 +1,346 @@
+table 'E1000 Scoring'
+	lineageTag: db843327-786e-4514-8842-1ce33e0af31c
+
+	measure Top_points_threshold =
+			
+			-- This combines max points distance threshold and max points time threshold into one measure
+			
+			VAR CurrentDistance =
+			    SELECTEDVALUE( 'March 26 results'[Distance] )
+			
+			VAR IsDistanceEvent =
+			    CurrentDistance = "30MIN" ||
+			    CurrentDistance = "45MIN" ||
+			    CurrentDistance = "60MIN"
+			
+			VAR SwimKey =
+			    SELECTEDVALUE( 'March 26 results'[Composite_key])
+			
+			VAR TimeThreshold =
+			    CALCULATE(
+			        MIN('E1000 Scoring'[Max points time threshold]),
+			        FILTER('E1000 Scoring', 'E1000 Scoring'[Composite_key] = SwimKey )
+			    )
+			
+			VAR DistanceThreshold =
+			    IFERROR(
+			        VALUE( SUBSTITUTE(
+			            CALCULATE(
+			                MAX( 'E1000 Scoring'[Max points distance threshold]),
+			                FILTER( 'E1000 Scoring', 'E1000 Scoring'[Composite_key] = SwimKey )
+			            ),
+			        "m", "" ) ),
+			        BLANK()
+			    )
+			
+			RETURN
+			    IF( IsDistanceEvent, DistanceThreshold, TimeThreshold )
+		lineageTag: 3a6801a7-1f37-4738-beb5-039260b450ac
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Improvement Needed' =
+			
+			-- Finding the improvement needed to reach the top points threshold. Combination of both metres and seconds for tables
+			VAR CurrentDistance =
+			    SELECTEDVALUE( 'March 26 results'[Distance] )
+			
+			VAR IsDistanceEvent =
+			    CurrentDistance = "30MIN" ||
+			    CurrentDistance = "45MIN" ||
+			    CurrentDistance = "60MIN"
+			
+			VAR TopPointsThreshold =
+			    IF(
+			        IsDistanceEvent,
+			        [Top_points_threshold],
+			        SELECTEDVALUE( 'E1000 Scoring'[TotalSeconds_max_time])
+			    )
+			
+			VAR CurrentResult =
+			    IF(
+			        IsDistanceEvent,
+			        SELECTEDVALUE( 'March 26 results'[Result] ),
+			        SELECTEDVALUE( 'March 26 results'[TotalSeconds] )
+			    )
+			
+			VAR ImprovementNeeded =
+			    IF(
+			        IsDistanceEvent,
+			        TopPointsThreshold - CurrentResult,
+			        CurrentResult - TopPointsThreshold
+			    )
+			
+			VAR ImprovementCapped =
+			    IF( ImprovementNeeded <= 0, 0, ImprovementNeeded )
+			
+			VAR Minutes =
+			    INT( ImprovementCapped / 60 )
+			
+			VAR Seconds =
+			    ImprovementCapped - ( Minutes * 60 )
+			
+			VAR SecondsFormatted =
+			    IF( Seconds < 10, "0" & FORMAT( Seconds, "0.00" ), FORMAT( Seconds, "0.00" ) )
+			
+			RETURN
+			    IF(
+			        IsDistanceEvent,
+			        ImprovementCapped & "m",
+			        Minutes & ":" & SecondsFormatted
+			    )
+		lineageTag: 14e06ac0-5c70-4b85-a22a-d1f995a11550
+
+	measure Medium_points_threshold =
+			
+			-- This combines medium points distance threshold and medium points time threshold into one measure
+			
+			VAR CurrentDistance =
+			    SELECTEDVALUE( 'March 26 results'[Distance] )
+			
+			VAR IsDistanceEvent =
+			    CurrentDistance = "30MIN" ||
+			    CurrentDistance = "45MIN" ||
+			    CurrentDistance = "60MIN"
+			
+			VAR SwimKey =
+			    SELECTEDVALUE( 'March 26 results'[Composite_key])
+			
+			VAR TimeThreshold =
+			    CALCULATE(
+			        MIN('E1000 Scoring'[Medium points time threshold]),
+			        FILTER('E1000 Scoring', 'E1000 Scoring'[Composite_key] = SwimKey )
+			    )
+			
+			VAR DistanceThreshold =
+			    IFERROR(
+			        VALUE( SUBSTITUTE(
+			            CALCULATE(
+			                MAX( 'E1000 Scoring'[Medium points distance threshold]),
+			                FILTER( 'E1000 Scoring', 'E1000 Scoring'[Composite_key] = SwimKey )
+			            ),
+			        "m", "" ) ),
+			        BLANK()
+			    )
+			
+			RETURN
+			    IF( IsDistanceEvent, DistanceThreshold, TimeThreshold )
+		lineageTag: c2f1e137-05fe-4411-b071-1b65ff407373
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Improvement_needed_medium =
+			
+			-- Finding the improvement needed to reach the medium points threshold. Combination of both metres and seconds for tables
+			VAR CurrentDistance =
+			    SELECTEDVALUE( 'March 26 results'[Distance] )
+			
+			VAR IsDistanceEvent =
+			    CurrentDistance = "30MIN" ||
+			    CurrentDistance = "45MIN" ||
+			    CurrentDistance = "60MIN"
+			
+			VAR TopPointsThreshold =
+			    IF(
+			        IsDistanceEvent,
+			        [Medium_points_threshold],
+			        SELECTEDVALUE( 'E1000 Scoring'[TotalSeconds_medium_time])
+			    )
+			
+			VAR CurrentResult =
+			    IF(
+			        IsDistanceEvent,
+			        SELECTEDVALUE( 'March 26 results'[Result] ),
+			        SELECTEDVALUE( 'March 26 results'[TotalSeconds] )
+			    )
+			
+			VAR ImprovementNeeded =
+			    IF(
+			        IsDistanceEvent,
+			        TopPointsThreshold - CurrentResult,
+			        CurrentResult - TopPointsThreshold
+			    )
+			
+			VAR ImprovementCapped =
+			    IF( ImprovementNeeded <= 0, 0, ImprovementNeeded )
+			
+			VAR Minutes =
+			    INT( ImprovementCapped / 60 )
+			
+			VAR Seconds =
+			    ImprovementCapped - ( Minutes * 60 )
+			
+			VAR SecondsFormatted =
+			    IF( Seconds < 10, "0" & FORMAT( Seconds, "0.00" ), FORMAT( Seconds, "0.00" ) )
+			
+			RETURN
+			    IF(
+			        IsDistanceEvent,
+			        ImprovementCapped & "m",
+			        Minutes & ":" & SecondsFormatted
+			    )
+		lineageTag: b354f65c-a0eb-4f39-890c-a6d86bb549b5
+
+	column Sex
+		dataType: string
+		lineageTag: 09d76bdf-285c-4ecf-8425-fe301bc6b8ea
+		summarizeBy: none
+		sourceColumn: Sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Age group'
+		dataType: string
+		lineageTag: 14cb6a47-ac7e-4eb0-8b2d-7bde235a38fe
+		summarizeBy: none
+		sourceColumn: Age group
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stroke
+		dataType: string
+		lineageTag: 1dea59c9-9bef-46b9-8a73-388a14611b76
+		summarizeBy: none
+		sourceColumn: Stroke
+
+		annotation SummarizationSetBy = Automatic
+
+	column Distance
+		dataType: string
+		lineageTag: b90c193b-5746-480a-a183-e50b930848ea
+		summarizeBy: none
+		sourceColumn: Distance
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Min points'
+		dataType: int64
+		formatString: 0
+		lineageTag: abb9598d-2400-4f51-a531-d32f24462c9a
+		summarizeBy: none
+		sourceColumn: Min points
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Medium points time threshold'
+		dataType: string
+		lineageTag: aa191a9a-7c6e-4969-af6f-35003d1c18f5
+		summarizeBy: none
+		sourceColumn: Medium points time threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Medium points distance threshold'
+		dataType: string
+		lineageTag: 2784c136-35d3-42a9-99ba-4a2f9b8f4e00
+		summarizeBy: none
+		sourceColumn: Medium points distance threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Medium points'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ca8f32f-8cc4-4bb4-9d30-50ec670577e1
+		summarizeBy: none
+		sourceColumn: Medium points
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Max points time threshold'
+		dataType: string
+		lineageTag: d554298f-cb42-40ee-951b-559a7e2b13e8
+		summarizeBy: none
+		sourceColumn: Max points time threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Max points distance threshold'
+		dataType: string
+		lineageTag: 9636aa67-c852-4778-9958-3a766fe5876f
+		summarizeBy: none
+		sourceColumn: Max points distance threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Max points'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b0a855a-5c38-4f18-812c-8cb733c12322
+		summarizeBy: none
+		sourceColumn: Max points
+
+		annotation SummarizationSetBy = Automatic
+
+	column Composite_key =
+			
+			-- Creating a key to link to the current results table
+			'E1000 Scoring'[Sex] & "-" & 'E1000 Scoring'[Age group] & "-" & 'E1000 Scoring'[Distance] & "-" & 'E1000 Scoring'[Stroke]
+		lineageTag: a6ab6598-d0fb-4e2a-9a51-82d817c9f072
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalSeconds_max_time =
+			IF('E1000 Scoring'[Max points time threshold] == BLANK(), BLANK(),
+			VAR Raw = TRIM('E1000 Scoring'[Max points time threshold])
+			VAR ColonPos = FIND(":", Raw)
+			VAR DotPos   = FIND(".", Raw)
+			
+			VAR MinPart  = VALUE(LEFT(Raw, ColonPos - 1))                        -- e.g. 006 → 6
+			VAR SecPart  = VALUE(MID(Raw, ColonPos + 1, DotPos - ColonPos - 1)) -- e.g. 36
+			VAR CsPart   = VALUE(MID(Raw, DotPos + 1, LEN(Raw)))                 -- e.g. 44 (centiseconds)
+			
+			RETURN MinPart * 60 + SecPart + CsPart / 100)
+		lineageTag: b1909f04-e9e7-4b0a-b0d5-9d16c038e6ab
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		type: calculated
+		lineageTag: 8b835b5d-c485-4e60-bf6c-e2c9b04978c9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+	column TotalSeconds_medium_time =
+			IF('E1000 Scoring'[Medium points time threshold] == BLANK(), BLANK(),
+			VAR Raw = TRIM('E1000 Scoring'[Medium points time threshold])
+			VAR ColonPos = FIND(":", Raw)
+			VAR DotPos   = FIND(".", Raw)
+			
+			VAR MinPart  = VALUE(LEFT(Raw, ColonPos - 1))                        -- e.g. 006 → 6
+			VAR SecPart  = VALUE(MID(Raw, ColonPos + 1, DotPos - ColonPos - 1)) -- e.g. 36
+			VAR CsPart   = VALUE(MID(Raw, DotPos + 1, LEN(Raw)))                 -- e.g. 44 (centiseconds)
+			
+			RETURN MinPart * 60 + SecPart + CsPart / 100)
+		lineageTag: 2ea3c981-f0ac-4a2c-92c9-23b040c57e7e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'E1000 Scoring' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000_Time_Thresholds.xlsx"), null, true),
+				    #"E1000 Scoring_Sheet" = Source{[Item="E1000 Scoring",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"E1000 Scoring_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Sex", type text}, {"Age group", type text}, {"Stroke", type text}, {"Distance", type text}, {"Min points", Int64.Type}, {"Medium points time threshold", type text}, {"Medium points distance threshold", type text}, {"Medium points", Int64.Type}, {"Max points time threshold", type text}, {"Max points distance threshold", type text}, {"Max points", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","30MINS","30MIN",Replacer.ReplaceText,{"Distance"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","45MINS","45MIN",Replacer.ReplaceText,{"Distance"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","60MINS","60MIN",Replacer.ReplaceText,{"Distance"})
+				in
+				    #"Replaced Value2"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

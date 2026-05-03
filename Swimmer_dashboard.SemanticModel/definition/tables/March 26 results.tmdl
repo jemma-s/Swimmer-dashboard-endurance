@@ -394,6 +394,39 @@ table 'March 26 results'
 
 		annotation SummarizationSetBy = Automatic
 
+	column Composite_key =
+			
+			-- Creating a key to link to the endurance times table
+			'March 26 results'[Sex] & "-" & 'March 26 results'[AgeGrp] & "-" & 'March 26 results'[Distance]& "-" & 'March 26 results'[Stroke]
+		lineageTag: fe38947d-4f4f-43ea-ac92-14a9078a65c4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Point_type =
+			
+			-- A conditional comment denoting what point type was achieved
+			SWITCH(
+			    TRUE,
+			    'March 26 results'[Distance] == "400m" && 'March 26 results'[Point] = 3, "Middle",
+			    'March 26 results'[Distance] == "800m" && 'March 26 results'[Point] = 6, "Middle",
+			    'March 26 results'[Distance] == "1500m" && 'March 26 results'[Point] = 30, "Middle",
+			    'March 26 results'[Distance] == "30MIN" && 'March 26 results'[Point] = 30, "Middle",
+			    'March 26 results'[Distance] == "45MIN" && 'March 26 results'[Point] = 35, "Middle",
+			    'March 26 results'[Distance] == "60MIN" && 'March 26 results'[Point] = 60, "Middle",
+			    'March 26 results'[Distance] == "400m" && 'March 26 results'[Point] = 5, "Max",
+			    'March 26 results'[Distance] == "800m" && 'March 26 results'[Point] = 10, "Max",
+			    'March 26 results'[Distance] == "1500m" && 'March 26 results'[Point] = 40, "Max",
+			    'March 26 results'[Distance] == "30MIN" && 'March 26 results'[Point] = 40, "Max",
+			    'March 26 results'[Distance] == "45MIN" && 'March 26 results'[Point] = 50, "Max",
+			    'March 26 results'[Distance] == "60MIN" && 'March 26 results'[Point] = 80, "Max",
+			    "Min"
+			)
+		lineageTag: f4e5feaa-c27b-43d5-b3a4-7de21b8ee9ce
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'March 26 results' = m
 		mode: import
 		source =

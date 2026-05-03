@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "4d49f6afae7d04ac73c2",
+  "name": "8eaabb273382ac03c001",
   "position": {
-    "x": 123.84615384615384,
-    "y": 0,
+    "x": 123.33333333333333,
+    "y": 56.666666666666664,
     "z": 3000,
-    "height": 86.153846153846146,
-    "width": 1155.3846153846152,
-    "tabOrder": 12000
+    "height": 46.666666666666664,
+    "width": 151.11111111111111,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,20 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Somerset Masters E1000 Results - Swimmer view",
+                    "value": "Most recent result:",
                     "textStyle": {
-                      "fontWeight": "bold",
-                      "fontFamily": "Segoe (Bold)",
-                      "fontSize": "32pt",
                       "color": "#ffffff"
                     }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": ""
                   }
                 ]
               }
@@ -49,19 +39,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "padding": [
-        {
-          "properties": {
-            "right": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }

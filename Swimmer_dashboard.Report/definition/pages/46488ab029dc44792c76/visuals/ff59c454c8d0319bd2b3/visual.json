@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "4d49f6afae7d04ac73c2",
+  "name": "ff59c454c8d0319bd2b3",
   "position": {
     "x": 123.84615384615384,
     "y": 0,
-    "z": 3000,
+    "z": 2000,
     "height": 86.153846153846146,
     "width": 1155.3846153846152,
-    "tabOrder": 12000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Somerset Masters E1000 Results - Swimmer view",
+                    "value": "Somerset Masters E1000 Results - Points view",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Segoe (Bold)",

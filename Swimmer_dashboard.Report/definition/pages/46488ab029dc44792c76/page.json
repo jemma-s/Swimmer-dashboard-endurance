@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "08860b5b44140c15be05",
-  "displayName": "Swimmer view",
+  "name": "46488ab029dc44792c76",
+  "displayName": "Points view",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
   "pageBinding": {
-    "name": "987e3e175ddb4d13033d",
+    "name": "104bdb46404756219ad2",
     "type": "Default",
     "parameters": []
   }
