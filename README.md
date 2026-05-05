@@ -2,6 +2,8 @@
 
 This dashboard was designed for the Somerset Masters Swimming club for the endurance (E1000) competition. This competition runs annually and requires swimmers to complete a variety of 400m, 800m, 1500m 30MIN, 45MIN and 60MIN swims in different strokes across the year. 
 
+Link: https://www.somersetmasters.org.au/copy-of-current-endurance-results 
+
 ## Purpose
 To provide a monthly update to the Somerset Masters Swimming Club members of the E1000 scores on a club and member level. 
 
