@@ -181,6 +181,46 @@ table 'E1000 Scoring'
 			    )
 		lineageTag: b354f65c-a0eb-4f39-890c-a6d86bb549b5
 
+	measure Max_text =
+			
+			-- This measure is used to come up on the max points table if all results have recieved max points
+			IF(VALUE('March 26 results'[Max_points_%]) = 1,
+			"All results recieved max points",
+			    ""
+			)
+		lineageTag: 1cb5392c-e626-4781-b1b3-653d18d0a13e
+
+	measure 'Completion %' =
+			
+			-- Finding the completion % for the radar chart as the max values are dependent on the stroke type
+			VAR TotalPoints = SUM('March 26 results'[Point])
+			
+			VAR MaxPoints =
+			    SWITCH(
+			        TRUE(),
+			        ISFILTERED('March 26 results'[Stroke]),
+			        CALCULATE(
+			            SUMX(
+			                VALUES('March 26 results'[Stroke]),
+			                SWITCH(
+			                    VALUES('March 26 results'[Stroke]),
+			                    "Freestyle",        285,
+			                    "Breaststroke",     285,
+			                    "Backstroke",       285,
+			                    "Butterfly",         75,
+			                    "Individual Medley",  75,
+			                    0
+			                )
+			            )
+			        ),
+			        285 + 285 + 285 + 75 + 75  -- No filter = all strokes = 1005
+			    )
+			
+			RETURN
+			    DIVIDE(TotalPoints, MaxPoints)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: d427acfe-b0c8-46b1-afde-442c2a7951fe
+
 	column Sex
 		dataType: string
 		lineageTag: 09d76bdf-285c-4ecf-8425-fe301bc6b8ea

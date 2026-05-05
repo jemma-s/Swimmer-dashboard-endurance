@@ -1,45 +1,52 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "6a4e11c1930d986d0890",
+  "name": "cc1cbff5409a0c9e4247",
   "position": {
-    "x": 0,
-    "y": 440,
-    "z": 11000,
-    "height": 280,
-    "width": 440,
-    "tabOrder": 6000
+    "x": 440.63362969261192,
+    "y": 89.338089868948813,
+    "z": 21000,
+    "height": 351.29553982366315,
+    "width": 425.49158056228163,
+    "tabOrder": 20003
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "pieChart",
     "query": {
       "queryState": {
         "Category": {
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "March 26 results"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "March 26 results"
                     }
                   },
-                  "Level": "Month"
+                  "Property": "Stroke"
                 }
               },
-              "queryRef": "March 26 results.Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Date Month",
+              "queryRef": "March 26 results.Stroke",
+              "nativeQueryRef": "Stroke",
               "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "E1000 Scoring"
+                    }
+                  },
+                  "Property": "Completion %"
+                }
+              },
+              "queryRef": "E1000 Scoring.Completion %",
+              "nativeQueryRef": "Completion %"
             }
           ]
         },
@@ -63,44 +70,47 @@
               },
               "queryRef": "Sum(March 26 results.Point)",
               "nativeQueryRef": "Points",
-              "displayName": "Points"
+              "displayName": "Points",
+              "format": "#,0"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "March 26 results"
+                      }
+                    },
+                    "Property": "Point"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryAxis": [
+      "dataPoint": [
         {
           "properties": {
-            "showAxisTitle": {
+            "borderShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(March 26 results.Point)"
           }
         }
       ]
@@ -112,19 +122,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Points over the year'"
-                }
-              }
-            },
-            "background": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
+                  "Value": "'Breakdown of points by stroke'"
                 }
               }
             },
@@ -139,30 +137,16 @@
                   }
                 }
               }
-            }
-          }
-        }
-      ],
-      "divider": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -186,6 +170,30 @@
                     "ThemeDataColor": {
                       "ColorId": 3,
                       "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F9F7F2'"
                     }
                   }
                 }

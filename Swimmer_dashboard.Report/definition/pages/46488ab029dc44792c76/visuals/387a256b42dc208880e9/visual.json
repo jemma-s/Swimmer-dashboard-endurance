@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
-  "name": "6fc8de4bb0017778cc55",
+  "name": "387a256b42dc208880e9",
   "position": {
-    "x": 911.55135764588454,
-    "y": 472.4319328663056,
+    "x": 638.99447329993893,
+    "y": 473.94613777933859,
     "z": 0,
     "height": 211.98868782462429,
     "width": 367.95179386702648,
-    "tabOrder": 10000
+    "tabOrder": 14001
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "March 26 results"
+                      "Entity": "E1000 Scoring"
                     }
                   },
-                  "Property": "Improvement_text"
+                  "Property": "Max_text"
                 }
               },
-              "queryRef": "March 26 results.Improvement_text",
-              "nativeQueryRef": "Improvement_text"
+              "queryRef": "E1000 Scoring.Max_text",
+              "nativeQueryRef": "Max_text"
             }
           ]
         }
