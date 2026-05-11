@@ -32,7 +32,7 @@ Features:
 * Dynamically updates the date dependent on the most recent result in the dataset. 
   
 ### Swimmer view
-![Club view](/screenshots/swimmer_view.png)
+![Swimmer view](/screenshots/swimmer_view.png)
 
 Features:
 * Allows for filtering by club member.
@@ -43,9 +43,19 @@ Features:
 * Dynamically updates the improvement table and graph to display "No improvement data found" when applicable.
 * Dynamically updates placing text to be gold, silver and bronze coloured when the swimmer has placed 1st, 2nd or 3rd respectively.
 
+### Improvement view
+In a given event, a swimmer can either gain maximum, medium or minimum points based on how fast or far they swam. This is dependent on the swimmer's age group and gender: https://e1000.msarc.org.au/scoring/index.php 
+![Improvement view](/screenshots/improvement_view.png)
+![Improvement view - with table](/screenshots/improvement_view_table.png)
+
+Features:
+* Dives deeper to break down the selected swimmers' scores. 
+* Visually shows the number of swims that have received certain score brackets based on distance.
+* When applicable, displays a table that shows the date of a specific result and the improvement needed to reach the next point category.
+* This page makes it easy for swimmers to identify which swims they need to improve on to receive more points.
+
+
 ## Future improvements
-* Insight into events that have not gained maximum points. Ideas include calculating the time improvement needed for swimmers to achieve more points
-  *    This would require an additional dataset of time thresholds per event, age group and gender.
-  *    It would also require the creation of event IDs based on strokes and distances to properly link the two datasets.
-* The addition of previous E1000 data to compare performances over the years on a club and swimmer level. 
+* The addition of previous E1000 data to compare performances over the years on a club and swimmer level.
+    * This may require converting the data model to a snowflake model to easily allow for future year comparisons. 
    
