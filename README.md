@@ -4,6 +4,10 @@ This dashboard was designed for the Somerset Masters Swimming club for the endur
 
 Link: https://www.somersetmasters.org.au/copy-of-current-endurance-results 
 
+![Demo](/screenshots/Demo-2026-06-08.gif)
+
+
+
 ## Purpose
 To provide a monthly update to the Somerset Masters Swimming Club members of the E1000 scores on a club and member level. 
 
