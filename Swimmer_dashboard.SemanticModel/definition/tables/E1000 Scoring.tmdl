@@ -339,15 +339,6 @@ table 'E1000 Scoring'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column Column
-		type: calculated
-		lineageTag: 8b835b5d-c485-4e60-bf6c-e2c9b04978c9
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
-
 	column TotalSeconds_medium_time =
 			IF('E1000 Scoring'[Medium points time threshold] == BLANK(), BLANK(),
 			VAR Raw = TRIM('E1000 Scoring'[Medium points time threshold])
@@ -370,7 +361,7 @@ table 'E1000 Scoring'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000_Time_Thresholds.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000_Time_Thresholds.xlsx"), null, true),
 				    #"E1000 Scoring_Sheet" = Source{[Item="E1000 Scoring",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(#"E1000 Scoring_Sheet", [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Sex", type text}, {"Age group", type text}, {"Stroke", type text}, {"Distance", type text}, {"Min points", Int64.Type}, {"Medium points time threshold", type text}, {"Medium points distance threshold", type text}, {"Medium points", Int64.Type}, {"Max points time threshold", type text}, {"Max points distance threshold", type text}, {"Max points", Int64.Type}}),

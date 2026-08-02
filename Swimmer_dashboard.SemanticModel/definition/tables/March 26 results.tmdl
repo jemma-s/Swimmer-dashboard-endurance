@@ -17,6 +17,8 @@ table 'March 26 results'
 
 	measure Total_points =
 			
+			-- Returns the sum of points
+			-- NOTE: if a month is selected, this will find the total points in a given month. Use with caution Jemma
 			SUM('March 26 results'[Point])
 		formatString: 0
 		lineageTag: 6c9abd83-2d40-4d3c-82ec-d7634e802b1f
@@ -213,6 +215,67 @@ table 'March 26 results'
 
 		annotation PBI_FormatHint = {"isDecimal":true}
 
+	measure Top_swimmer =
+			
+			-- Returns the name of the swimmer with the top amount of points
+			MAXX(
+			    TOPN(
+			        1,
+			        VALUES('March 26 results'[Name]),
+			        [Total_points], DESC
+			    ),
+			    'March 26 results'[Name]
+			)
+		lineageTag: 4b12b442-9e7d-4b65-b83d-8467d72fa459
+
+	measure 'Previous Month Points' =
+			
+			-- Returns the amount of points from the previous month
+			CALCULATE(
+			    [Total_points],
+			    PREVIOUSMONTH('Date Table'[Date])
+			)
+		formatString: 0
+		lineageTag: 955ac0bb-242b-4ca8-86cc-24e635e0bcaa
+
+	measure Total_points_cumulative = ```
+			
+			-- Returns the total points as at the selected date. 
+			VAR Max_date = 
+			MAX('Date table'[Date])
+			
+			RETURN
+			CALCULATE(
+			    [Total_points],
+			    FILTER(
+			        ALL('Date table'[Date]),
+			        'Date table'[Date]<=Max_date
+			        )
+			    )
+			    
+			```
+		formatString: 0
+		lineageTag: 301be952-aa92-4f85-88a9-a18fa021b0cf
+
+	measure Total_points_prev_cumulative = ```
+			
+			-- Returns the total points as at a month before the selected date
+			VAR Prev_month = 
+			EOMONTH(MAX('Date table'[Date]), -1)
+			
+			RETURN
+			CALCULATE(
+			    [Total_points],
+			    FILTER(
+			        ALL('Date table'[Date]),
+			        'Date table'[Date]<=Prev_month
+			        )
+			    )
+			    
+			```
+		formatString: 0
+		lineageTag: 21ba3288-94c5-416a-b86c-77857058c27c
+
 	column 'MSA ID'
 		dataType: int64
 		lineageTag: e2c6a8c7-4e6d-4654-ace5-edea00f2c0ce
@@ -305,11 +368,6 @@ table 'March 26 results'
 		lineageTag: 94d3b872-077d-4789-bf79-d5cf44c97751
 		summarizeBy: none
 		sourceColumn: Date
-
-		variation Variation
-			isDefault
-			relationship: 86155def-6d65-4a50-8c2a-65b92f325ef4
-			defaultHierarchy: LocalDateTable_01a7efcc-300a-41bc-8617-6de431762896.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -431,7 +489,7 @@ table 'March 26 results'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\OneDrive\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents("C:\Users\jemma\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results.xlsx"), null, true),
 				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"MSA ID", Int64.Type}, {"Club", type text}, {"Sex", type text}, {"AgeGrp", type text}, {"Course", type text}, {"Distance", type text}, {"Stroke", type text}, {"Result", type text}, {"Split", type any}, {"Point", Int64.Type}, {"Date", type date}, {"Location", type text}, {"Name", type text}}),

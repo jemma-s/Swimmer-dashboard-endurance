@@ -1,10 +1,10 @@
-relationship 86155def-6d65-4a50-8c2a-65b92f325ef4
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'March 26 results'.Date
-	toColumn: LocalDateTable_01a7efcc-300a-41bc-8617-6de431762896.Date
-
 relationship 0dd24472-6a25-28fe-7665-9772847d28d8
 	crossFilteringBehavior: bothDirections
 	fromColumn: 'March 26 results'.Composite_key
 	toColumn: 'E1000 Scoring'.Composite_key
+
+relationship 163d3a79-c3f3-c214-1fa9-51faba2906da
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'March 26 results'.Date
+	toColumn: 'Date table'.Date
 

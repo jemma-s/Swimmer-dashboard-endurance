@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "217c27189b73bd2a0073",
+  "position": {
+    "x": 198.42672264642783,
+    "y": 90.7093589240813,
+    "z": 8000,
+    "height": 139.84359500795867,
+    "width": 404.41255853652916,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
+                  "Property": "Top_swimmer"
+                }
+              },
+              "queryRef": "March 26 results.Top_swimmer",
+              "nativeQueryRef": "Top points scorer this month",
+              "displayName": "Top points scorer this month"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

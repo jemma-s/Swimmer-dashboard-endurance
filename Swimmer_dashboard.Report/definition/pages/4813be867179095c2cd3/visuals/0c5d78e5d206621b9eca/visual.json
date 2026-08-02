@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "0c5d78e5d206621b9eca",
   "position": {
     "x": 863.33333333333337,
@@ -71,7 +71,8 @@
               },
               "queryRef": "Sum(March 26 results.Point)",
               "nativeQueryRef": "Points",
-              "displayName": "Points"
+              "displayName": "Points",
+              "format": "#,0"
             }
           ]
         }
@@ -157,6 +158,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

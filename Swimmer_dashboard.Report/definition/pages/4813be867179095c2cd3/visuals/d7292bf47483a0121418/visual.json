@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "d7292bf47483a0121418",
   "position": {
     "x": 0,
@@ -17,28 +17,17 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "March 26 results"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "Date table"
                     }
                   },
-                  "Level": "Month"
+                  "Property": "Month"
                 }
               },
-              "queryRef": "March 26 results.Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Date Month",
+              "queryRef": "Date table.Month",
+              "nativeQueryRef": "Month",
               "active": true
             }
           ]
@@ -63,7 +52,8 @@
               },
               "queryRef": "Sum(March 26 results.Point)",
               "nativeQueryRef": "Points",
-              "displayName": "Points"
+              "displayName": "Points",
+              "format": "#,0"
             }
           ]
         }
@@ -77,6 +67,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Scalar'"
                 }
               }
             }
@@ -101,6 +98,19 @@
           },
           "selector": {
             "metadata": "Sum(March 26 results.Point)"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "roundRange": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

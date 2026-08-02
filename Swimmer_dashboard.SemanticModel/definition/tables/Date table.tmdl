@@ -1,0 +1,92 @@
+table 'Date table'
+	lineageTag: 5edfb2bf-cabc-44e0-991c-5987828c9b74
+	dataCategory: Time
+
+	measure Points_Month_Trend =
+			
+			-- Returns the change in points from the previous month
+			VAR Change = [Points_Change]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK([Previous Month Points]), BLANK(),
+			    Change > 0, UNICHAR(9650) & " +" & FORMAT(Change, "#,##0"),
+			    Change < 0, UNICHAR(9660) & " " & FORMAT(Change, "#,##0"),
+			    UNICHAR(8212) & " 0"
+			)
+		lineageTag: 36f5dba8-6029-4550-83c7-8febbbed80b9
+
+	measure Points_Change =
+			
+			-- Gives the points change from the previous month
+			[Total_points] - [Previous Month Points]
+		formatString: 0
+		lineageTag: d9d18135-2317-49ab-ba96-636a9525194b
+
+	measure KC_100_points =
+			
+			-- Checks if a swimmer has achieved 100 points in the month selected
+			IF([Total_points_prev_cumulative]<100 &&
+			[Total_points_cumulative] >= 100,
+			SELECTEDVALUE('March 26 results'[Name]),
+			BLANK())
+		lineageTag: af5208e4-f298-4fd5-bfb2-50a40166214a
+
+	measure KC_200_points =
+			
+			-- Checks if a swimmer has achieved 200 points in the month selected
+			IF([Total_points_prev_cumulative]<200 &&
+			[Total_points_cumulative] >= 200,
+			SELECTEDVALUE('March 26 results'[Name]),
+			BLANK())
+		lineageTag: 2af21b67-ba69-46d2-822b-95bb92ef0850
+
+	measure KC_500_points =
+			
+			-- Checks if a swimmer has achieved 500 points in the month selected
+			IF([Total_points_prev_cumulative]<500 &&
+			[Total_points_cumulative] >= 500,
+			SELECTEDVALUE('March 26 results'[Name]),
+			BLANK())
+		lineageTag: befba4f3-c0a9-4688-ad2e-4029117f0d3f
+
+	measure KC_1005_points =
+			
+			-- Checks if a swimmer has achieved 1005 points in the month selected
+			IF([Total_points_prev_cumulative]<1005 &&
+			[Total_points_cumulative] >= 1005,
+			SELECTEDVALUE('March 26 results'[Name]),
+			BLANK())
+		lineageTag: b377d09c-849b-42f6-9933-2121a3dd0f85
+
+	column Date
+		isKey
+		formatString: d/mm/yyyy
+		lineageTag: a76dd270-aa82-43f2-95d8-8322b1a40874
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Month = FORMAT('Date table'[Date], "MMMM YYYY")
+		lineageTag: b7552d7f-e0a7-4674-b11c-8516ac8e78dd
+		summarizeBy: none
+		sortByColumn: Month_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month_num = FORMAT('Date table'[Date], "M")
+		lineageTag: bdf5ef0b-ecc7-4366-a056-b5cd665691d2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Date table' = calculated
+		mode: import
+		source = CALENDARAUTO()
+
+	annotation PBI_Id = 5529536d5eb1450497a1d7c1a86ba034
+
