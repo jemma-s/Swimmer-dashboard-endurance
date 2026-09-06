@@ -3,10 +3,10 @@
   "name": "2c7746c790dd9d8c605d",
   "position": {
     "x": 0,
-    "y": 306.36363636363632,
+    "y": 306.14408636877437,
     "z": 16000,
-    "height": 121.81818181818181,
-    "width": 439.99999999999994,
+    "height": 122.83559020969344,
+    "width": 455.43657293132486,
     "tabOrder": 16000
   },
   "visual": {
@@ -396,5 +396,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b8f066fa88373b0724c6",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Point"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b93881e042b89040fcd3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Max_points_%"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "962832ff49987971accf",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Total_time_hours"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

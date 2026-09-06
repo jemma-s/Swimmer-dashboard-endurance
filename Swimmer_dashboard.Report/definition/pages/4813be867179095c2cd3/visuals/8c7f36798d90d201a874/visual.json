@@ -6,7 +6,7 @@
     "y": 211.65517082285638,
     "z": 6000,
     "height": 120.94581189877506,
-    "width": 487.56280421693697,
+    "width": 508.350365637039,
     "tabOrder": 1000
   },
   "visual": {
@@ -425,5 +425,66 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "93bd861589f1194bd08a",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Point"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8c85d429f076011b0a18",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Point"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0eeacdb17fc425066b50",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Name"
+              }
+            },
+            "Function": 2
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

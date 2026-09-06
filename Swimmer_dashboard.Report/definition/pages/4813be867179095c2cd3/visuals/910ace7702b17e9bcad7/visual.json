@@ -6,7 +6,7 @@
     "y": 304.254308057856,
     "z": 9000,
     "height": 136.06403838612195,
-    "width": 487.56280421693697,
+    "width": 493.2321391496921,
     "tabOrder": 5000
   },
   "visual": {
@@ -350,5 +350,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6b6f5307160f11996c8d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Max_points_%"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9818e4450f0f9ed94872",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Average_points"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5d88bceb6b4512b600d6",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Total_time_hours"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
