@@ -79,6 +79,8 @@ table 'Date table'
 		annotation SummarizationSetBy = Automatic
 
 	column Month_num = FORMAT('Date table'[Date], "M")
+		dataType: int64
+		formatString: 0
 		lineageTag: bdf5ef0b-ecc7-4366-a056-b5cd665691d2
 		summarizeBy: none
 
