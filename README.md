@@ -4,7 +4,7 @@ This dashboard was designed for the Somerset Masters Swimming club for the endur
 
 Link: https://www.somersetmasters.org.au/copy-of-current-endurance-results 
 
-![Demo](/screenshots/Demo-2026-06-08.gif)
+![Demo](/screenshots/Demo-2026-11-04.gif)
 
 
 
@@ -24,39 +24,57 @@ Data has been scraped from the E1000 website using the Somerset recorder app (li
 All data used is publicly accessible.  
 
 ## Dashboard views
+### Home view
+![Club view](/screenshots/0-home-view.png)
+
+Features:
+* A clear landing page for the user to navigate to other pages.
+* Information on what the endurance E1000 competition is.
+* Instructions on who to contact if the user identifies errors on the dashboard
+
+### Leaderboard view
+![Club view](/screenshots/1-leaderboard-view.png)
+
+Features:
+* Shows the current points leaderboard, separated by gender.
+* Identifies which swimmer has achieved maximum points, shown in yellow.
+* Displays the percentage of maximum points that the swimmer has achieved. 
+
 ### Club view
-![Club view](/screenshots/club_view.png)
+![Club view](/screenshots/2-club-view.png)
 
 Features:
 * Gives an overview of the club's key statistics, including total points, number of swims, number of swimmers, percentage of swims that achieved maximum points and average number of points per swimmer.
 * Gives an overview of points per month over the year.
 * Shows an overview of points per stroke and event.
-* Shows the current leaderboard, conditionally coloured based on gender.
-* Shows the swimmer who has achieved the greatest PB in a single event.
 * Dynamically updates the date dependent on the most recent result in the dataset. 
   
-### Swimmer view
-![Swimmer view](/screenshots/swimmer_view.png)
+### Individual view
+![Swimmer view](/screenshots/3-individual-view.png)
 
 Features:
 * Allows for filtering by club member.
 * Gives an overview of the swimmer's key statistics, including total points, number of swims, percentage of swims that achieved maximum points and current placings. 
 * Gives an overview of points per day over the year.
 * Displays an overview of points per stroke and event. 
-* Gives insight into improvements that have been made over the year. Displayed in a table and a graph due to accessibility reasons.
-* Dynamically updates the improvement table and graph to display "No improvement data found" when applicable.
 * Dynamically updates placing text to be gold, silver and bronze coloured when the swimmer has placed 1st, 2nd or 3rd respectively.
 
 ### Improvement view
 In a given event, a swimmer can either gain maximum, medium or minimum points based on how fast or far they swam. This is dependent on the swimmer's age group and gender: https://e1000.msarc.org.au/scoring/index.php 
-![Improvement view](/screenshots/improvement_view.png)
-![Improvement view - with table](/screenshots/improvement_view_table.png)
+![Improvement view](/screenshots/3.5-individual-improvement-view.png)
 
 Features:
 * Dives deeper to break down the selected swimmers' scores. 
 * Visually shows the number of swims that have received certain score brackets based on distance.
 * When applicable, displays a table that shows the date of a specific result and the improvement needed to reach the next point category.
 * This page makes it easy for swimmers to identify which swims they need to improve on to receive more points.
+
+### Milestone view
+![Swimmer view](/screenshots/4-milestone-view.png)
+
+Features:
+* Shows all swimmers who have reached a milestone this year.
+* Shows all swimmers who have reached a milestone this month and last month. Another committee member uses this data to create awards.
 
 
 ## Future improvements
