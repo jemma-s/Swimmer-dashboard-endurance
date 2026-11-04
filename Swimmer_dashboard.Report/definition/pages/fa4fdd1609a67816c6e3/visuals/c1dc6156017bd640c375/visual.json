@@ -344,6 +344,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "37a254880678d5a5e1c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Distance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8b2b72c35b44b3dd0641",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "E1000 Scoring"
+              }
+            },
+            "Property": "Stroke_short"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

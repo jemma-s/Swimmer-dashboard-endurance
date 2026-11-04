@@ -5,7 +5,7 @@
     "x": 951.38240574506278,
     "y": 222.90843806104129,
     "z": 8000,
-    "height": 488.33034111310587,
+    "height": 486.032315978456,
     "width": 315.97845601436262,
     "tabOrder": 8000
   },
@@ -176,5 +176,42 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f442f46c4d1da6748380",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "E1000 Scoring"
+              }
+            },
+            "Property": "Stroke_short"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0410fe29cb704371d65b",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Point"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

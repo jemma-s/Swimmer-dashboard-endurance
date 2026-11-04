@@ -403,5 +403,70 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4e924d7f79e526bd25d9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Distance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b1d818d09e6bba79edae",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "E1000 Scoring"
+              }
+            },
+            "Property": "Stroke_short"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e411e65d1a24718c8550",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Point_type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "15cb4d528ba037857acc",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Point_type"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

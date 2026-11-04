@@ -23,6 +23,21 @@
                       "Entity": "March 26 results"
                     }
                   },
+                  "Property": "Point_type"
+                }
+              },
+              "queryRef": "March 26 results.Point_type",
+              "nativeQueryRef": "Point type",
+              "displayName": "Point type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "March 26 results"
+                    }
+                  },
                   "Property": "Distance"
                 }
               },
@@ -77,59 +92,29 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "E1000 Scoring"
+                      "Entity": "March 26 results"
                     }
                   },
-                  "Property": "Top_points_threshold"
+                  "Property": "Next_point_threshold"
                 }
               },
-              "queryRef": "E1000 Scoring.Top_points_threshold",
-              "nativeQueryRef": "Result needed for max points",
-              "displayName": "Result needed for max points"
+              "queryRef": "March 26 results.Next_point_threshold",
+              "nativeQueryRef": "Next time threshold",
+              "displayName": "Next time threshold"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "E1000 Scoring"
+                      "Entity": "March 26 results"
                     }
                   },
-                  "Property": "Improvement Needed"
+                  "Property": "Next_improvement_threshold"
                 }
               },
-              "queryRef": "E1000 Scoring.Improvement Needed",
+              "queryRef": "March 26 results.Next_improvement_threshold",
               "nativeQueryRef": "Improvement needed",
-              "displayName": "Improvement needed"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "E1000 Scoring"
-                    }
-                  },
-                  "Property": "Medium_points_threshold"
-                }
-              },
-              "queryRef": "E1000 Scoring.Medium_points_threshold",
-              "nativeQueryRef": "Result needed for medium points",
-              "displayName": "Result needed for medium points"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "E1000 Scoring"
-                    }
-                  },
-                  "Property": "Improvement_needed_medium"
-                }
-              },
-              "queryRef": "E1000 Scoring.Improvement_needed_medium",
-              "nativeQueryRef": "Improvement needed1",
               "displayName": "Improvement needed"
             }
           ]
@@ -191,62 +176,6 @@
           },
           "selector": {
             "metadata": "March 26 results.Distance"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "95.55555555555556D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "E1000 Scoring.Top_points_threshold"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "110.33332930175862D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "E1000 Scoring.Improvement Needed"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "108.00005022413814D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "E1000 Scoring.Medium_points_threshold"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "116.66666666666666D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "E1000 Scoring.Improvement_needed_medium"
           }
         }
       ],
@@ -527,6 +456,104 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "a277a780190a0a8a4eeb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Distance"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "27281e970ac4a1890b14",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Stroke"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "18ea462f88b77a5a04a7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "First_date"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "497139744862ad00e058",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Result"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "046eece27cd30c98185c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Next_point_threshold"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7927967641a1ebe1c042",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Next_improvement_threshold"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b68f05e02920e11e48c3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "March 26 results"
+              }
+            },
+            "Property": "Point_type"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

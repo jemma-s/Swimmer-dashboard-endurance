@@ -257,7 +257,7 @@ table 'E1000 Scoring'
 		dataType: int64
 		formatString: 0
 		lineageTag: abb9598d-2400-4f51-a531-d32f24462c9a
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Min points
 
 		annotation SummarizationSetBy = Automatic
@@ -282,7 +282,7 @@ table 'E1000 Scoring'
 		dataType: int64
 		formatString: 0
 		lineageTag: 3ca8f32f-8cc4-4bb4-9d30-50ec670577e1
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Medium points
 
 		annotation SummarizationSetBy = Automatic
@@ -307,7 +307,7 @@ table 'E1000 Scoring'
 		dataType: int64
 		formatString: 0
 		lineageTag: 5b0a855a-5c38-4f18-812c-8cb733c12322
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Max points
 
 		annotation SummarizationSetBy = Automatic
@@ -333,7 +333,7 @@ table 'E1000 Scoring'
 			
 			RETURN MinPart * 60 + SecPart + CsPart / 100)
 		lineageTag: b1909f04-e9e7-4b0a-b0d5-9d16c038e6ab
-		summarizeBy: none
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
@@ -351,7 +351,7 @@ table 'E1000 Scoring'
 			
 			RETURN MinPart * 60 + SecPart + CsPart / 100)
 		lineageTag: 2ea3c981-f0ac-4a2c-92c9-23b040c57e7e
-		summarizeBy: none
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 

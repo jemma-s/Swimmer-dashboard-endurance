@@ -1,0 +1,131 @@
+table 'Past results'
+	lineageTag: 0b037cd7-2752-4c1a-9959-3033b3f10819
+
+	column 'MSA ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: c79686ac-ba1e-40ec-9c60-8023d06562f2
+		summarizeBy: count
+		sourceColumn: MSA ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Club
+		dataType: string
+		lineageTag: aedfa888-9b38-4b39-a495-422a964b7f41
+		summarizeBy: none
+		sourceColumn: Club
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sex
+		dataType: string
+		lineageTag: 246dc58c-8d61-4048-a7b1-e6e857ca4823
+		summarizeBy: none
+		sourceColumn: Sex
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgeGrp
+		dataType: string
+		lineageTag: dcb49ffa-93bc-4821-8388-2be1ec3f787c
+		summarizeBy: none
+		sourceColumn: AgeGrp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Course
+		dataType: string
+		lineageTag: ba16ce42-26e2-4f9c-bbf0-403b1df10565
+		summarizeBy: none
+		sourceColumn: Course
+
+		annotation SummarizationSetBy = Automatic
+
+	column Distance
+		dataType: string
+		lineageTag: 0293e0f0-f69d-4f2c-a968-d82859dce987
+		summarizeBy: none
+		sourceColumn: Distance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stroke
+		dataType: string
+		lineageTag: 8422b5d2-67a6-43a4-9385-06751a778c02
+		summarizeBy: none
+		sourceColumn: Stroke
+
+		annotation SummarizationSetBy = Automatic
+
+	column Result
+		dataType: string
+		lineageTag: e846c748-4cfc-4448-94ba-8e60ed3f6795
+		summarizeBy: none
+		sourceColumn: Result
+
+		annotation SummarizationSetBy = Automatic
+
+	column Split
+		dataType: string
+		lineageTag: 677cc054-fcc3-4907-9bbd-d3591cdd80a0
+		summarizeBy: none
+		sourceColumn: Split
+
+		annotation SummarizationSetBy = Automatic
+
+	column Point
+		dataType: int64
+		formatString: 0
+		lineageTag: fc3dbbeb-b984-40b5-b65e-6658f5ae3957
+		summarizeBy: sum
+		sourceColumn: Point
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: string
+		lineageTag: d3b00909-33f1-4848-ad86-45e64eee6034
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 25811a4e-1eda-4717-af07-89ed38365ed2
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 1f9ad641-0877-449e-aea1-131ea4fa6719
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Composite_key =
+			
+			-- Creating a key to link to the endurance times table
+			'Past results'[Sex] & "-" & 'Past results'[AgeGrp] & "-" & 'Past results'[Distance]& "-" & 'Past results'[Stroke]
+		lineageTag: 77775509-7bf9-4490-a89c-cdcbc4934e9a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Past results' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("C:\Users\jemma\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results-WSM-2023-2025.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"MSA ID", Int64.Type}, {"Club", type text}, {"Sex", type text}, {"AgeGrp", type text}, {"Course", type text}, {"Distance", type text}, {"Stroke", type text}, {"Result", type text}, {"Point", Int64.Type}, {"Date", type text}, {"Location", type text}, {"Name", type text}}, "en-US")
+				in
+				  #"Changed column type"
+
+	changedProperty = Name
+

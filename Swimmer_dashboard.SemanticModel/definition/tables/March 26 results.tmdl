@@ -276,6 +276,34 @@ table 'March 26 results'
 		formatString: 0
 		lineageTag: 21ba3288-94c5-416a-b86c-77857058c27c
 
+	measure Next_point_threshold =
+			
+			-- This measure returns the 'next time threshold' if max points aren't achieved
+			-- If swimmer currently has 'middle' time, the 'max' time will be returned
+			-- If the swimmer currently has 'min' time, the 'middle' time will be returned
+			SWITCH(
+			    SELECTEDVALUE('March 26 results'[Point_type]),
+			    "Middle", [Top_points_threshold],
+			    "Min", [Medium_points_threshold],
+			    BLANK()
+			)
+		lineageTag: 5f793c8a-9f4c-4489-a64e-91ab7fed5b36
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Next_improvement_threshold =
+			
+			-- This measure returns the 'next improvement threshold' if max points aren't achieved
+			-- If swimmer currently has 'middle' time, the 'max' time will be returned
+			-- If the swimmer currently has 'min' time, the 'middle' time will be returned
+			SWITCH(
+			    SELECTEDVALUE('March 26 results'[Point_type]),
+			    "Middle", [Improvement Needed],
+			    "Min", [Improvement_needed_medium],
+			    BLANK()
+			)
+		lineageTag: b602ae8f-70f3-4cea-bc87-6d0db734e2f8
+
 	column 'MSA ID'
 		dataType: int64
 		lineageTag: e2c6a8c7-4e6d-4654-ace5-edea00f2c0ce
@@ -465,7 +493,7 @@ table 'March 26 results'
 			
 			-- A conditional comment denoting what point type was achieved
 			SWITCH(
-			    TRUE,
+			    TRUE(),
 			    'March 26 results'[Distance] == "400m" && 'March 26 results'[Point] = 3, "Middle",
 			    'March 26 results'[Distance] == "800m" && 'March 26 results'[Point] = 6, "Middle",
 			    'March 26 results'[Distance] == "1500m" && 'March 26 results'[Point] = 30, "Middle",

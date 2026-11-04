@@ -8,3 +8,8 @@ relationship 163d3a79-c3f3-c214-1fa9-51faba2906da
 	fromColumn: 'March 26 results'.Date
 	toColumn: 'Date table'.Date
 
+relationship 26f1e21d-2c17-a2d4-750e-11154f7b007e
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Past results'.Composite_key
+	toColumn: 'E1000 Scoring'.Composite_key
+
