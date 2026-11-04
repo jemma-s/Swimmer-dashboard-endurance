@@ -76,9 +76,39 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "calendar-34192910699027459.png",
+          "path": "calendar-34192910699027459.png",
+          "type": "Image"
+        },
+        {
           "name": "Custom1627829863939635.json",
           "path": "Custom1627829863939635.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "group-144078254542953454.png",
+          "path": "group-144078254542953454.png",
+          "type": "Image"
+        },
+        {
+          "name": "house-44447114864004107.png",
+          "path": "house-44447114864004107.png",
+          "type": "Image"
+        },
+        {
+          "name": "person-23290229541072477.png",
+          "path": "person-23290229541072477.png",
+          "type": "Image"
+        },
+        {
+          "name": "podium-29877255274964721.png",
+          "path": "podium-29877255274964721.png",
+          "type": "Image"
+        },
+        {
+          "name": "prize-17239921083587149.png",
+          "path": "prize-17239921083587149.png",
+          "type": "Image"
         },
         {
           "name": "somerset_logo3501018667405491.jpg",

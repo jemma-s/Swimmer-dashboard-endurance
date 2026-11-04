@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "303dc06e49dec6a0b63d",
+  "position": {
+    "x": 198,
+    "y": 231,
+    "z": 11000,
+    "height": 489,
+    "width": 206,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "SPACING"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Total width of graphs: 1180"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "COLOURS"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Gold HEX: #D9B300"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Silver HEX: #666666"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Bronze HEX: #805020"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Purple HEX: #6B007B"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

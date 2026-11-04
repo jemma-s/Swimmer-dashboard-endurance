@@ -357,6 +357,21 @@ table 'E1000 Scoring'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Stroke_short =
+			
+			-- Defining short-hand acronyms for the strokes
+			SWITCH([Stroke],
+			    "Freestyle", "Free",
+			    "Breaststroke", "Breast",
+			    "Backstroke", "Back",
+			    "Butterfly", "Fly",
+			    "Individual Medley", "IM",
+			    "ERROR")
+		lineageTag: bb7102fd-7f45-4a27-b976-c9ac0f636cc7
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'E1000 Scoring' = m
 		mode: import
 		source =

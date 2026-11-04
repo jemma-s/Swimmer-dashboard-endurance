@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3dcaaf38e7c851d088da",
+  "position": {
+    "x": 495.71428571428572,
+    "y": 228.57142857142858,
+    "z": 7000,
+    "height": 195.71428571428572,
+    "width": 327.14285714285717,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date table"
+                    }
+                  },
+                  "Property": "Points_Month_Trend"
+                }
+              },
+              "queryRef": "Date table.Points_Month_Trend",
+              "nativeQueryRef": "Points_Month_Trend"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -61,7 +61,7 @@ table 'Date table'
 
 	column Date
 		isKey
-		formatString: d/mm/yyyy
+		formatString: Short Date
 		lineageTag: a76dd270-aa82-43f2-95d8-8322b1a40874
 		summarizeBy: none
 		isNameInferred
@@ -69,9 +69,7 @@ table 'Date table'
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isDateTimeCustom":true}
-
-	column Month = FORMAT('Date table'[Date], "MMMM YYYY")
+	column Month = FORMAT('Date table'[Date], "mmm")
 		lineageTag: b7552d7f-e0a7-4674-b11c-8516ac8e78dd
 		summarizeBy: none
 		sortByColumn: Month_num
