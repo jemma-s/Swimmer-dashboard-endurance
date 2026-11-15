@@ -59,6 +59,38 @@ table 'Date table'
 			BLANK())
 		lineageTag: b377d09c-849b-42f6-9933-2121a3dd0f85
 
+	measure count_KC_100_points =
+			
+			-- Returns the count of 100 milestones that have been achieved
+			COUNTX(DISTINCT('March 26 results'[Name]),
+			[KC_100_points])
+		formatString: 0
+		lineageTag: 95fa6e6a-f48a-41fe-b978-a4296acedd88
+
+	measure count_KC_200_points =
+			
+			-- Returns the count of 200 milestones that have been achieved
+			COUNTX(DISTINCT('March 26 results'[Name]),
+			[KC_200_points])
+		formatString: 0
+		lineageTag: dd0a6575-9148-4825-9c7e-b9490b95f6e0
+
+	measure count_KC_500_points =
+			
+			-- Returns the count of 500 milestones that have been achieved
+			COUNTX(DISTINCT('March 26 results'[Name]),
+			[KC_500_points])
+		formatString: 0
+		lineageTag: 12d1bff4-23bf-4e78-bdbb-d7f5912bf189
+
+	measure count_KC_1005_points =
+			
+			-- Returns the count of 1005 milestones that have been achieved
+			COUNTX(DISTINCT('March 26 results'[Name]),
+			[KC_1005_points])
+		formatString: 0
+		lineageTag: 1f40992a-f19e-44ef-a368-29a255fec639
+
 	column Date
 		isKey
 		formatString: Short Date

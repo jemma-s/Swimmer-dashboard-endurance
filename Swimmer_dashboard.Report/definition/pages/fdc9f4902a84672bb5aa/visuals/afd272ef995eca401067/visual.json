@@ -10,7 +10,7 @@
     "tabOrder": 19006
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -36,24 +36,63 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "March 26 results"
-                        }
-                      },
-                      "Property": "Point"
+                    "SourceRef": {
+                      "Entity": "Date table"
                     }
                   },
-                  "Function": 0
+                  "Property": "count_KC_100_points"
                 }
               },
-              "queryRef": "Sum(March 26 results.Point)",
-              "nativeQueryRef": "Sum of Point",
-              "displayName": "Points",
-              "format": "#,0"
+              "queryRef": "Date table.count_KC_100_points",
+              "nativeQueryRef": "100 points",
+              "displayName": "100 points"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date table"
+                    }
+                  },
+                  "Property": "count_KC_200_points"
+                }
+              },
+              "queryRef": "Date table.count_KC_200_points",
+              "nativeQueryRef": "200 points",
+              "displayName": "200 points"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date table"
+                    }
+                  },
+                  "Property": "count_KC_500_points"
+                }
+              },
+              "queryRef": "Date table.count_KC_500_points",
+              "nativeQueryRef": "500 points",
+              "displayName": "500 points"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date table"
+                    }
+                  },
+                  "Property": "count_KC_1005_points"
+                }
+              },
+              "queryRef": "Date table.count_KC_1005_points",
+              "nativeQueryRef": "1500 points",
+              "displayName": "1500 points"
             }
           ]
         }
@@ -80,27 +119,6 @@
           }
         }
       ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(March 26 results.Point)"
-          }
-        }
-      ],
       "valueAxis": [
         {
           "properties": {
@@ -110,7 +128,95 @@
                   "Value": "false"
                 }
               }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Number of milestones'"
+                }
+              }
             }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#805020'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Date table.count_KC_100_points"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D9B300'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Date table.count_KC_500_points"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#666666'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Date table.count_KC_200_points"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6B007B'"
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Date table.count_KC_1005_points"
           }
         }
       ]
@@ -122,7 +228,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Points over the year'"
+                  "Value": "'Milestones over the year'"
                 }
               }
             },
@@ -206,42 +312,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "95fc0d48c8a7ece02a02",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "March 26 results"
-                  }
-                },
-                "Property": "Point"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "28ae8a5922e186bbcc90",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Date table"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
