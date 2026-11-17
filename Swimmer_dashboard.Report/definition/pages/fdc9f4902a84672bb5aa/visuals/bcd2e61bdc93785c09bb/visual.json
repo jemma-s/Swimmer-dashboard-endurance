@@ -6,7 +6,7 @@
     "y": 490.00000000000006,
     "z": 10000,
     "height": 230.00000000000003,
-    "width": 180,
+    "width": 165,
     "tabOrder": 10000
   },
   "visual": {
@@ -89,6 +89,13 @@
                       "Value": "'#F9F7F2'"
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -270,7 +277,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "44D"
+                  "Value": "40D"
                 }
               }
             },
@@ -498,20 +505,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "942cc0678368d36dc313",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "March 26 results"
-              }
-            },
-            "Property": "Name"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

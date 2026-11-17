@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "2f2127d44c74acb1e9dd",
   "position": {
-    "x": 1123.5714285714287,
+    "x": 1124,
     "y": 101.42857142857143,
     "z": 5000,
     "height": 360,
@@ -440,20 +440,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "c05ec6c0d04bb4874c59",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "March 26 results"
-              }
-            },
-            "Property": "Name"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

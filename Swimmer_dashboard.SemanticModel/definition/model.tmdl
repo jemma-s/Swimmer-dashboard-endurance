@@ -16,6 +16,7 @@ ref table 'March 26 results'
 ref table 'E1000 Scoring'
 ref table 'Date table'
 ref table 'Past results'
+ref table Fact_swimmer_table
 
 ref cultureInfo en-AU
 

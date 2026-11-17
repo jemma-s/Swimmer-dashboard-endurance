@@ -1,0 +1,21 @@
+table Fact_swimmer_table
+	lineageTag: 6635277b-55e1-4354-8d9c-b2c526eb4a8d
+
+	column 'MSA ID'
+		formatString: 0
+		lineageTag: 6124275b-b949-4ad0-acd8-8b4a226e7187
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: March 26 results[MSA ID]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_swimmer_table = calculated
+		mode: import
+		source =
+				
+				-- Creates a table of unique swimmers (i.e. ID numbers)
+				DISTINCT(UNION(VALUES('March 26 results'[MSA ID]), VALUES('Past results'[MSA ID])))
+
+	annotation PBI_Id = f060fd16463e49f8946ab39f744e28cf
+

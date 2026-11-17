@@ -429,23 +429,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c3d5b5515691c0403e34",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "March 26 results"
-              }
-            },
-            "Property": "Name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

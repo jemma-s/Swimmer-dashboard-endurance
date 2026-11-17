@@ -206,42 +206,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e1d05091250aac28a98d",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "March 26 results"
-                  }
-                },
-                "Property": "Point"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "3a0800f2ae93475b1312",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Date table"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

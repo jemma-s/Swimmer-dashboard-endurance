@@ -91,6 +91,20 @@ table 'Date table'
 		formatString: 0
 		lineageTag: 1f40992a-f19e-44ef-a368-29a255fec639
 
+	measure Points_past_current =
+			
+			-- Returns all points from past and present table
+			SUM('March 26 results'[Point]) + SUM('Past results'[Point])
+		formatString: 0
+		lineageTag: 22f87cfa-9433-4432-98c1-45faaa2e19b5
+
+	measure Name_count =
+			
+			-- Returns a count of the number of names that have been returned
+			COUNT('March 26 results'[Name])
+		formatString: 0
+		lineageTag: e4b5de12-40d4-4f30-8ed7-8d2dbbcb34e1
+
 	column Date
 		isKey
 		formatString: Short Date
@@ -112,9 +126,25 @@ table 'Date table'
 		dataType: int64
 		formatString: 0
 		lineageTag: bdf5ef0b-ecc7-4366-a056-b5cd665691d2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = FORMAT('Date table'[Date], "yyyy")
+		dataType: string
+		lineageTag: ea782a29-c06f-48b3-80d0-0eabe8c5109a
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
+
+	column Day_month = FORMAT('Date table'[Date], "mmmm")
+		lineageTag: e31828ce-1b61-4985-a15b-a84b45b4817f
+		summarizeBy: none
+		sortByColumn: Month_num
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	partition 'Date table' = calculated
 		mode: import

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "f9613b48ca2204b273e2",
   "position": {
-    "x": 1123.5714285714287,
+    "x": 1124.2857142857144,
     "y": 490.00000000000006,
-    "z": 19004,
+    "z": 23000,
     "height": 230.00000000000003,
     "width": 142.85714285714286,
-    "tabOrder": 19004
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "tableEx",
@@ -31,6 +31,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "March 26 results"
+                  }
+                },
+                "Property": "Name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {

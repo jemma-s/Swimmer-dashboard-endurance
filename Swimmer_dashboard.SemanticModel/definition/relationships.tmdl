@@ -1,15 +1,24 @@
 relationship 0dd24472-6a25-28fe-7665-9772847d28d8
-	crossFilteringBehavior: bothDirections
 	fromColumn: 'March 26 results'.Composite_key
 	toColumn: 'E1000 Scoring'.Composite_key
 
 relationship 163d3a79-c3f3-c214-1fa9-51faba2906da
-	crossFilteringBehavior: bothDirections
 	fromColumn: 'March 26 results'.Date
 	toColumn: 'Date table'.Date
 
 relationship 26f1e21d-2c17-a2d4-750e-11154f7b007e
-	crossFilteringBehavior: bothDirections
 	fromColumn: 'Past results'.Composite_key
 	toColumn: 'E1000 Scoring'.Composite_key
+
+relationship d6cb3b94-61ce-6bea-b234-da4f707cfe4a
+	fromColumn: 'March 26 results'.'MSA ID'
+	toColumn: Fact_swimmer_table.'MSA ID'
+
+relationship 3a06b056-60ab-c485-abb6-beb0d6d3d1c9
+	fromColumn: 'Past results'.'MSA ID'
+	toColumn: Fact_swimmer_table.'MSA ID'
+
+relationship 046ba246-d468-984e-75a7-fcb7e191d81b
+	fromColumn: 'Past results'.Date
+	toColumn: 'Date table'.Date
 

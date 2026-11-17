@@ -78,6 +78,20 @@
                     "value": "Purple HEX: #6B007B"
                   }
                 ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Background HEX: #F9F7F2"
+                  }
+                ]
               }
             ]
           }

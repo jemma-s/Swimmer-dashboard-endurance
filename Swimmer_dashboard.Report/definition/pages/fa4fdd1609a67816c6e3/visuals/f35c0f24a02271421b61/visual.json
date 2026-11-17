@@ -176,42 +176,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f442f46c4d1da6748380",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "E1000 Scoring"
-              }
-            },
-            "Property": "Stroke_short"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0410fe29cb704371d65b",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "March 26 results"
-                  }
-                },
-                "Property": "Point"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
