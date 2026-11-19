@@ -313,6 +313,20 @@
           "selector": {
             "metadata": "Past results.Total_points_pp"
           }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Past results.Total_swims_pp"
+          }
         }
       ],
       "label": [

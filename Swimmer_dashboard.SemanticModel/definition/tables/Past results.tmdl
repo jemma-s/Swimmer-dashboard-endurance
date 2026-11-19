@@ -191,7 +191,7 @@ table 'Past results'
 		mode: import
 		source =
 				let
-				  Source = Excel.Workbook(File.Contents("C:\Users\jemma\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results-WSM-2023-2025.xlsx"), null, true),
+				  Source = Excel.Workbook(File.Contents("C:\Users\jemma\Documents\Somerset\Coding\Swimmer-dashboard\Swimmer-dashboard-endurance\files\E1000-results-WSM-2022-2025.xlsx"), null, true),
 				  #"Navigation 1" = Source{[Item = "Sheet1", Kind = "Sheet"]}[Data],
 				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
 				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"MSA ID", Int64.Type}, {"Club", type text}, {"Sex", type text}, {"AgeGrp", type text}, {"Course", type text}, {"Distance", type text}, {"Stroke", type text}, {"Result", type text}, {"Point", Int64.Type}, {"Date", type date}, {"Location", type text}, {"Name", type text}}),
